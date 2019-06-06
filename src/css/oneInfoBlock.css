@@ -1,0 +1,25 @@
+.imgInfo {
+  display: block;
+  margin: 0;
+}
+
+.textInfo {
+  display: none;
+  margin: 0;
+}
+
+.oneBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.oneBlock:hover {
+  border: 2px solid grey;
+}
+.oneBlock:hover span {
+  display: block;
+}
+
+/*# sourceMappingURL=oneInfoBlock.css.map */

@@ -1,0 +1,16 @@
+$project1: #C4CBB7;
+$project2: #EEE0B7;
+
+#project1 {
+	background-color: $project1;
+}
+
+#project2 {
+	background-color: $project2;
+}
+
+.projectPage {
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}

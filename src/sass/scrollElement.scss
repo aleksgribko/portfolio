@@ -1,0 +1,26 @@
+%arrow {
+  position:fixed;
+  width: 20px;
+  height: 20px;
+  top: 90vh;
+  left: 50%;
+  border: solid black;
+  border-width: 0 3px 3px 0;  
+  padding: 3px; 
+}
+
+.arrowDown { 
+@extend %arrow;
+  top: 90vh; 
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.arrowUp {
+  @extend %arrow;  
+  display: none;
+  top: 10vh;  
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+}
+
