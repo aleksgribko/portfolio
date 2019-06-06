@@ -1,27 +1,37 @@
-import React from 'react';
-import Photo from './components/Photo.js'
-import Name from './components/Name.js'
+import React, { useState, useEffect } from 'react';
 import AllInfo from './components/AllInfo.js'
 import Contacts from './components/Contacts.js'
-import HelloInfo from './components/HelloInfo.js'
+import Name from './components/Name.js'
 import Projects from './components/Projects.js'
 import ScrollElement from './components/ScrollElement.js'
+import LayerInfo from './components/LayerInfo.js'
+
 import './css/App.css';
 
 function App() {  
 
+let [identificator, setIdentificator] = useState(null)
+
+
+  function switchLayer(identify){
+    setIdentificator(identify)
+  }
+
+
   return (
-    <div className="App">  
+    <div className="App" id="mainPagesFlow">  
       <div className='flex navbar'>       
           <Name />
           <Contacts />       
        </div> 
-      <div id='project0' className='flex'>                
-          <div>
-            <Photo />
-            <HelloInfo />  
-           </div>     
-          <AllInfo />          
+      <div id='project0' className='flex'> 
+          <LayerInfo 
+            identificator = {identificator}
+            getBackIndentificator = {switchLayer}
+          />                          
+          <AllInfo 
+            switchLayer={switchLayer}
+          />          
        </div>  
        <Projects /> 
        <ScrollElement />

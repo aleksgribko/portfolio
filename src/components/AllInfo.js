@@ -2,7 +2,7 @@ import React from 'react'
 import OneInfoBlock from './OneInfoBlock.js'
 import '../css/allInfo.css'
 
-export default function AllInfo(){
+export default function AllInfo(props){
 
 const allInfo = [
 	{name: 'About', link: 'man', id: 101},
@@ -18,7 +18,8 @@ function formsectionInfo() {
       <OneInfoBlock
         name={block.name}
         id={block.id}
-        link={block.link}        
+        link={block.link}    
+        switchLayer={props.switchLayer}    
       />
     ));
     return completeBlock;
