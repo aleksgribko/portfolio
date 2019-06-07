@@ -1,32 +1,31 @@
 .imgInfo {
 	display: block;
 	margin: 0;
-	
 }
 
 .textInfo {
-	display: none;
-	margin: 0;	
+	visibility: hidden;
+	margin: 0;
 }
 
 .oneBlock {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width:100%;
-  height:100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
 }
 
-.oneBlock:hover{
+.oneBlock:hover {
 	border: 2px solid grey;
-	background-color: #E8CAAF;
+	background-color: #e8caaf;
 
 	span {
-		display: block;
+		visibility: visible;
 	}
 }
 
-a{
-		padding-left: 0px;
+a {
+	padding-left: 0px;
 }

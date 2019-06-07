@@ -9,7 +9,7 @@ export default function OneInfoBlock(props){
     //    link={props.link}      
 
 	return(
-		<a onClick={() => props.switchLayer(props.id)}>
+		<a onClick={() => props.switchLayer(props.id, props.name)}>
 			<div className='oneBlock'>				
 				<img className='imgInfo' src={require(`./../materials/${props.link}.png`)} />
 				<span className='textInfo'>{props.name}</span>				

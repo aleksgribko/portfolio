@@ -12,3 +12,14 @@ li {
 	padding-left: 20px;
  	}
 }
+
+.flex {
+	display: flex;	
+			
+}
+
+.navbar {
+	width: 100%;
+	position: fixed;	
+	justify-content: flex-end;
+}

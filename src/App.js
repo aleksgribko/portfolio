@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import AllInfo from './components/AllInfo.js'
 import Contacts from './components/Contacts.js'
-import Name from './components/Name.js'
 import Projects from './components/Projects.js'
 import ScrollElement from './components/ScrollElement.js'
 import LayerInfo from './components/LayerInfo.js'
@@ -11,26 +10,29 @@ import './css/App.css';
 function App() {  
 
 let [identificator, setIdentificator] = useState(null)
+let [cardName, setCardName] = useState(null)
 
 
-  function switchLayer(identify){
+  function switchLayer(identify, name){
     setIdentificator(identify)
+    setCardName(name)
   }
 
 
   return (
     <div className="App" id="mainPagesFlow">  
-      <div className='flex navbar'>       
-          <Name />
+               
           <Contacts />       
-       </div> 
+       
       <div id='project0' className='flex'> 
           <LayerInfo 
             identificator = {identificator}
             getBackIndentificator = {switchLayer}
+            cardName= {cardName}
           />                          
           <AllInfo 
             switchLayer={switchLayer}
+            cardName= {cardName}
           />          
        </div>  
        <Projects /> 

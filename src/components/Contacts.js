@@ -3,6 +3,7 @@ import "../css/contacts.css";
 
 export default function Contacts() {
 	return (
+		<div className="flex navbar" style={{'z-index': '100'}}>
 		<ul>
 			<li>
 				<a
@@ -24,5 +25,6 @@ export default function Contacts() {
 				</a>
 			</li>
 		</ul>
+		</div>
 	);
 }

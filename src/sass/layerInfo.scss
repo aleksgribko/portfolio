@@ -1,0 +1,33 @@
+#layerForInfo {
+	flex-basis: 350px;
+}
+
+.infoCard {
+	max-height: 90vh;
+	width: 100%;
+
+	h3 {
+		padding-left: 10px;
+	}
+
+	h4 {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+.progress{
+	height: 1rem;	
+	width: 100vh / 10;	
+	
+	border: solid black 1px;
+  	
+		div{
+			position: relative;
+			height: 1rem;
+			color: black;
+			background-color: red;
+			font-size: 0.8rem;		
+
+		}
+}

@@ -4,7 +4,7 @@
 }
 
 .textInfo {
-  display: none;
+  visibility: hidden;
   margin: 0;
 }
 
@@ -19,10 +19,10 @@
 
 .oneBlock:hover {
   border: 2px solid grey;
-  background-color: #E8CAAF;
+  background-color: #e8caaf;
 }
 .oneBlock:hover span {
-  display: block;
+  visibility: visible;
 }
 
 a {
