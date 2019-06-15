@@ -17,7 +17,7 @@ export default function Contacts() {
 				<a href="https://github.com/Alezh89">github</a>
 			</li>
 			<li>
-				<a href="https://github.com/Alezh89">twitter</a>
+				<a href="https://twitter.com/Alezh89">twitter</a>
 			</li>
 			<li>
 				<a href="https://www.linkedin.com/in/aleksandrgribko/">

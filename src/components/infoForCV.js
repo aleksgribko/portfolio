@@ -16,7 +16,7 @@
          {
              name: 'OpenClassrooms, online education platform (based in France)',
              degree: 'Bachelor’s Degree, Web (Front-end) developer (ongoing)',
-             years: '2007 - 2012',
+             years: '2018 - 2019',
          },
         {
              name: 'Leibniz Universität Hannover, Germany',
@@ -34,10 +34,22 @@
 
     export const techExperience = {
          name: 'techExperience',
+         quant: '8',
+         descr1: 'projects with different technologies',
+         term: '9',
+         descr2:'months of experience',
+         text: 'See my projects below',         
     }
 
     export const legalExperience = {
          name: 'legalExperience',
+         places: [
+             {company: 'Innovative People Ltd', position: 'IT and IP Legal counsel', spec: 'IT outsourcing', term: 'Jun 2017 - Present'},
+             {company: 'UGIS group Ltd', position: 'IT and IP Legal counsel', spec: 'IT outsourcing', term:'Sep 2014 – Sep 2016'},
+             {company: 'National Center of Intellectual Property', position: 'Specialist of the department of law and international treaties', spec: 'IT outsourcing', term: 'Sep 2012 – Sep 2014'},
+             {company: 'IT legal solutions', position: 'Legal Intern', spec: 'Online legal service', term:'Feb 2012 – Aug 2012'}
+         ]
+         
     }
 
     export const technicalSkills = {
@@ -53,7 +65,8 @@
              {skill: 'Agile workﬂows', level: 60},
              {skill: 'DevTools', level: 60},
              {skill: 'AJAX, JSON, API', level: 50},           
-             {skill: 'SQL, UML', level: 50},    
+             {skill: 'SQL, UML', level: 50},   
+             {skill: 'Jasmine (JS testing framework)', level: 50},  
          ]
 
     }

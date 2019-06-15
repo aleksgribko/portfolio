@@ -1,0 +1,383 @@
+$project1text: #70A589;
+$project1back: #031217;
+$project1head: #EE4037;
+
+$project2back: #FDF27C;
+$project2text: #455D4D;
+$project2head: #007bff;
+
+$project3back: #c7956d;
+$project3text: #2b222c;
+$project3head: #5e4352;
+
+
+$project4back: #7FCAC3;
+$project4text: black;
+$project4head: #FF003C;
+
+$project5back: #d4af37;
+$project5text: #82371c;
+$project5head: white;
+
+$project6back: black;
+$project6text: white;
+$project6head: #50c878;
+
+$project7back: #017069;
+$project7text: #eeeeee;
+$project7head: black;
+
+$project8back: #DEDAE7;
+$project8text: #2F072A;
+$project8head: #8F0732;
+
+
+
+.projectPage {
+
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.left {
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+
+		.mainCut{
+			max-width: 90%;			
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 5%;
+			
+		}
+
+		.mainFull{
+			position: fixed;
+			display: block;									
+			z-index: 991;
+			top: 50%;
+			left: 50vw;
+			transform:translate(-50%, -50%);
+			max-height: 90%;
+			max-width: 90%;
+			border: 5px solid #890506;
+			border-radius: 5px;
+		}
+
+		.mobileCut{		
+			max-width: 80%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			
+			
+		}
+
+		.mobileFull{
+			position: fixed;
+			display: block;
+			max-width: 90%;
+			max-height: 90%;
+			z-index: 991;
+			top: 50%;
+			left: 50vw;
+			transform:translate(-50%, -50%);
+			border: 5px solid #890506;
+			border-radius: 5px;	
+			
+		}
+
+
+		.imgInfo {
+			text-align: center;
+			font-style: italic;
+			color: #A6A8A7;
+		}
+
+		.mobileCut:hover {
+			transform:scale(1.1,1.1);
+		}	
+
+		.mainCut:hover {
+			transform:scale(1.1,1.1);
+		}		
+	}
+
+	.right {
+		height: 90%;
+		margin-top: 10px;
+		
+		margin-bottom: 0;
+		border-radius: 20px;
+		display: grid;		
+		grid-template-areas:
+		'pro pro pro'
+		'tech ski ski'
+		'desc desc desc'
+		'lin lin lin';
+		grid-template-rows: 20% 40% 25% 15%;
+		grid-gap: 10px;
+
+		.pro{
+			grid-area: pro;
+			
+			text-align: center;
+		}
+		
+		.lin{
+			grid-area: lin;
+			align-self: center;
+			text-align: center;	
+			
+		}
+
+		a:hover {
+			font-weight: bold;
+		}
+
+		.tech{
+			grid-area: tech;
+		}
+
+		.ski{
+			grid-area: ski;
+		}
+
+		.desc{
+			grid-area: desc;
+			
+		}
+
+		h2{			
+			text-align: center;
+		}
+		h3, p, ul{
+			padding-left: 20px;
+			margin-left: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		ul{
+			padding: 0px;
+			margin: 0px;	
+				
+			list-style-position: inside;	
+		}
+
+		li{
+			
+			 list-style-type: circle;
+		}
+
+		a {						
+			padding-bottom: 20px;
+			padding-left: 20px;
+
+		}
+
+		p{
+			padding-bottom: 10px;				
+		}
+
+	}
+}
+
+#project1 {
+	.right {
+		background-color: $project1back;		
+		color: $project1text;
+		h2{
+			color: $project1head;
+		}
+		a{
+			color: $project1head;
+		}
+	}
+}
+#project2 {
+	.right {
+		background-color: $project2back;
+		color: $project2text;
+		h2{
+			color: $project2head;
+		}
+		a{
+			color: $project2head;
+		}
+	}
+}
+
+#project3 {
+	.right {
+		background-color: $project3back;
+		color: $project3text;
+		h2{
+			color: $project3head;
+		}
+		a{
+			color: $project3head;
+		}
+	}
+}
+
+#project4 {
+	.right {
+		background-color: $project4back;
+		color: $project4text;
+		h2{
+			color: $project4head;
+		}
+		a{
+			color: $project4head;
+		}
+	}
+}
+
+#project5 {
+	.right {
+		background-color: $project5back;
+		color: $project5text;
+		h2{
+			color: $project5head;
+		}
+		a{
+			color: $project5head;
+		}
+	}
+}
+
+#project6 {
+	.right {
+		background-color: $project6back;
+		color: $project6text;
+		h2{
+			color: $project6head;
+		}
+		a{
+			color: $project6head;
+		}
+	}
+}
+
+#project7 {
+	.right {
+		background-color: $project7back;
+		color: $project7text;
+		h2{
+			color: $project7head;
+		}
+		a{
+			color: $project7head;
+		}
+	}
+}
+
+#project8 {
+	.right {
+		background-color: $project8back;
+		color: $project8text;
+		h2{
+			color: $project8head;
+		}
+		a{
+			color: $project8head;
+		}
+	}
+}
+
+.left {
+	width: 35%;
+	height: 95%;
+}
+
+.right {
+	width: 65%;
+	height: 100%;
+}
+
+.slides-container{
+	max-width:800px;
+}
+
+.slide {
+	display: none;
+	width:100%;
+}
+.w3-left,
+.w3-right,
+.w3-badge {
+	cursor: pointer;
+}
+.w3-badge {
+	height: 13px;
+	width: 13px;
+	padding: 0;
+}
+
+@media only screen and (orientation: portrait) {
+    .projectPage {
+    	flex-direction: column-reverse;
+    	.right{
+    		width: 90%;
+    		height: 70%;
+		    margin-top: 5vh;
+    	}
+
+    	.left{
+    		flex-direction: row;
+    		width: 100vw;
+    		height: 30%;
+
+
+    		.mainCut{
+			max-height: 90%;
+			    max-width: 40vw;
+			    display: block;
+			    margin: auto;
+			    padding-left: 10px;
+			    padding-right: 10px;
+			   	
+			
+		}
+
+		.imgInfo{
+			display: none;
+		}
+		
+		.mobileCut{
+			    max-height: 90%;
+			    max-width: 40vw;
+			    display: block;
+			    margin: auto;
+				padding-left: 10px;
+			    padding-right: 10px;
+		}
+
+
+    	}
+
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .projectPage {
+    	flex-direction: row;
+    }
+
+    .mainCut{
+		max-height: 40%;	
+		max-width:100%;		
+		z-index: 990;
+	}
+	.mobileCut{
+		max-height: 40%;	
+		max-width:100%;		
+		z-index: 990;
+	}
+}
+
+
+

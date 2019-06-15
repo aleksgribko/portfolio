@@ -4,42 +4,7 @@ import projectsData from './projectsData.js'
 import $ from "jquery";
 
 
-let curYPos, curDown, mouseUpHere
 
-	window.addEventListener('mousemove', function(e){ 	  
-	  curDown && ($(window).scrollTop($(window).scrollTop() + (curYPos - e.pageY))
-	  	
-	)				
-	})
-
-	window.addEventListener('mousedown', function(e){ 
-	  curYPos = e.pageY; 	  
-	  curDown = true; 
-	});
-
-	window.addEventListener('mouseup', function(e){ 
-	  curDown = false; 	  
-/*	  
-	  for (let i=1; i<=numberOfProjects; i++){
-	  	if ($(`#project${i}`).position().top > window.scrollY){
-	  		setPosition(i-1)	
-	  		break
-	  	} else if ($(`#project${i}`).position().top == window.scrollY) {
-	  		setPosition(i)
-	  	}
-	  }
-	  console.log(position)
-	  if (window.scrollY > 0){
-	  	$('.arrowUp').css('display', 'block')
-	  }
-	  */
-	//  if(curYPos>mouseUpHere){
-	//  	setPosition(--position)	
-	//  } else if (curYPos<mouseUpHere) {
-	//  	setPosition(++position)	
-	//  }
-	//  console.log(position)
-	});
 
 
 
@@ -55,13 +20,13 @@ export default function ScrollElement(props) {
 	function clickedArrowUp() {
 		$('.arrowDown').css('display', 'block')				
 		setPosition(--position)	
-		console.log(position)
+		
 	}
 
 	function clickedArrowDown() {	
 		$('.arrowUp').css('display', 'block')
 		setPosition(++position)		
-		console.log(position)	
+			
 	}
 
 	let scrollPos = 0		
@@ -69,7 +34,8 @@ export default function ScrollElement(props) {
 	window.addEventListener('scroll', (event) => {
 
 		event.stopImmediatePropagation()
-		let scrollTop = $(window).scrollTop()		
+		let scrollTop = $(window).scrollTop()	
+		
 
 		if(scrollTop > 0){
 				$('.arrowUp').css('display', 'block')
@@ -88,11 +54,11 @@ export default function ScrollElement(props) {
 			$(`#project${i+1}`).position().top > scrollTop 
 			) {
 				if (document.body.getBoundingClientRect().top > scrollPos){
-					console.log('UP', position)	
+						
 					setPosition(i)						
 				}
 				else {
-					console.log('DOWN', position)		
+							
 					setPosition(++i)			
 				}
 			}

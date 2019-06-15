@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"allInfo.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/allInfo.scss"],"names":[],"mappings":"AAAA;EACK;EACA;;;AAGL;EACC;EACA;;;AAKD;EAGI;IACI;IACA;IACN;IACA;IACA;;;EAID;IACA;;;AAID;EAEC;IACA;;;EAIG;IACF;IACA;IACA;;;EAGE;IACC;IACH;IACA","file":"allInfo.css"}

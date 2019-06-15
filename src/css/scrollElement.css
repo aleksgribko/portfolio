@@ -22,4 +22,10 @@
   -webkit-transform: rotate(225deg);
 }
 
+@media only screen and (orientation: portrait) {
+  .arrowDown, .arrowUp {
+    visibility: hidden;
+  }
+}
+
 /*# sourceMappingURL=scrollelement.css.map */

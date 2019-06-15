@@ -1,3 +1,53 @@
-.infoBlocks {
+#helloScreen{    			
+    	display: grid;   
+    	padding-top: 10vmin; 				 
+	}
+
+#infoScreen {
+	padding-top: 15vmin; 
+	display: grid; 
+}
+
+
+
+@media only screen and (orientation: portrait) {
+    
+
+    #helloScreen,  #infoScreen{     
+        display: grid;	
+        grid-gap: 2vmin;  
+		grid-template-rows: 10vmin 10vmin;
+		grid-template-columns: 30vmin 30vmin 30vmin;	
+		padding-top: 0; 
+
+	}
+
+	.layerMenu {	
+	width: 95%;
+}
+}
+
+@media only screen and (orientation: landscape) {
+
+	.layerMenu {
+	height: 90vmin;
 	
 }
+
+    #infoScreen{    	
+		grid-gap: 2vmin;   	
+		grid-template-rows: 10vmin 10vmin 10vmin 10vmin 10vmin 10vmin;
+		grid-template-columns: 20vmin;	
+    }
+
+    #helloScreen{  
+    	grid-gap: 10vmin;   	
+		grid-template-rows: 20vmin 20vmin 20vmin;
+		grid-template-columns: 20vmin 20vmin;		 
+	}
+}
+
+
+
+
+

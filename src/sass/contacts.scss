@@ -1,15 +1,18 @@
 ul {
 	display: flex;
 	flex-direction: row;
-	list-style: none;	
-	padding-right: 20px;
+	list-style: none;		
+	
 }
 
 li {
 	a {
-	color: black;
+	color: #890506;
 	text-decoration: none;
 	padding-left: 20px;
+ 	}
+ 	a:hover {
+ 		font-weight: bold;
  	}
 }
 
@@ -19,7 +22,25 @@ li {
 }
 
 .navbar {
-	width: 100%;
+	width: 97vw;
 	position: fixed;	
 	justify-content: flex-end;
+	
+	font-size: 100%;
+}
+
+@media (max-width: 435px){
+	li {
+	a {
+	font-size: 0.8rem;
+ 	}
+ }
+}
+
+@media (max-width: 435px){
+	li {
+	a {
+	font-size: 0.7rem;
+ 	}
+ }
 }

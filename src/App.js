@@ -4,39 +4,46 @@ import Contacts from './components/Contacts.js'
 import Projects from './components/Projects.js'
 import ScrollElement from './components/ScrollElement.js'
 import LayerInfo from './components/LayerInfo.js'
+import styled from 'styled-components'
+import $ from 'jquery'
 
 import './css/App.css';
 
 function App() {  
 
+// cool colors #FF003C #4ea1fd #890506
+
 let [identificator, setIdentificator] = useState(null)
 let [cardName, setCardName] = useState(null)
-
 
   function switchLayer(identify, name){
     setIdentificator(identify)
     setCardName(name)
   }
-
-
+    
   return (
     <div className="App" id="mainPagesFlow">  
                
           <Contacts />       
-       
+      <div id="project0back"></div>
       <div id='project0' className='flex'> 
+        
           <LayerInfo 
             identificator = {identificator}
             getBackIndentificator = {switchLayer}
             cardName= {cardName}
-          />                          
+          />   
+        
+                             
           <AllInfo 
             switchLayer={switchLayer}
             cardName= {cardName}
-          />          
+          />  
+            
        </div>  
        <Projects /> 
        <ScrollElement />
+       <div id='blackLayer'></div>
     </div>
   );
 }

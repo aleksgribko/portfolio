@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Photo from "./Photo.js";
 import HelloInfo from "./HelloInfo.js";
-import projectsData from "./projectsData.js";
 import SmallCard from "./SmallCard.js"; 
 import { about, education, techExperience, legalExperience, technicalSkills, softSkills } from "./infoForCV.js";
 import layerInfo from "../css/layerInfo.css";
@@ -17,9 +16,9 @@ export default function LayerInfo(props) {
 					<div className="infoCard">
 						<SmallCard 
 						onClick = {() => props.getBackIndentificator(null)}/>
-						<h4>{props.cardName}</h4>
+						<h4 className='reddishColor'>{props.cardName}</h4>
 						<p>{about.about}</p>
-						<h4>Hobbies</h4>
+						<h4 className='reddishColor'>Hobbies</h4>
 						<p>{about.hobbies}</p>						
 					</div>
 				];
@@ -32,8 +31,8 @@ export default function LayerInfo(props) {
 						<h4>{props.cardName}</h4>
 						{(() => education.unis.map(oneUni => (
 							<div>
-								<h4>{oneUni.name}</h4>
-								<h5>{oneUni.degree}</h5>
+								<h4 className='reddishColor'>{oneUni.name}</h4>
+								<span>{oneUni.degree}</span>
 								<p>{oneUni.years}</p>
 								<hr />								
 							</div>
@@ -46,8 +45,14 @@ export default function LayerInfo(props) {
 					<div className="infoCard">
 						<SmallCard 
 						onClick = {() => props.getBackIndentificator(null)}/>
-						<h4>{props.cardName}</h4>
-						<p>about.about</p>						
+						<h4>{props.cardName}</h4>						
+						<div>
+							<h2 className='reddishColor'>{techExperience.quant}</h2>
+							<p>{techExperience.descr1}</p>
+							<h2 className='reddishColor'>{techExperience.term}</h2>
+							<p>{techExperience.descr2}</p>			
+							<p>{techExperience.text}</p>				
+						</div>											
 					</div>
 				];
 				break
@@ -57,7 +62,14 @@ export default function LayerInfo(props) {
 						<SmallCard 
 						onClick = {() => props.getBackIndentificator(null)}/>
 						<h4>{props.cardName}</h4>
-						<p>about.about</p>						
+						{(() => legalExperience.places.map(onePlace => (
+							<div>
+								<span className='reddishColor'>{onePlace.company} </span><span className='textSmall'>{onePlace.term}</span>
+								<p className='textSmall'>{onePlace.position}</p>
+								<p className='textSmall'>{onePlace.spec}</p>								
+								<hr />								
+							</div>
+							)))()}							
 					</div>
 				];
 				break
@@ -71,25 +83,24 @@ export default function LayerInfo(props) {
 							<div>
 								<span>{oneSkill.skill}</span>
 								<div className="progress">
-								<div style={{'width': `${oneSkill.level}%`}}>{oneSkill.level}%</div>
+								<div className='whiteBar' style={{'width': `${oneSkill.level}%`}}>{oneSkill.level}%</div>
 								</div>
 							</div>
 							)))()}						
 					</div>
 				];
 				break
-			case 'Soft Skills':
+			case 'Languages':
 				formedContend = [
 					<div className="infoCard">
 						<SmallCard 
 						onClick = {() => props.getBackIndentificator(null)}/>
-						<h4>{props.cardName}</h4>
-						<p>Languages</p>
+						<h4>{props.cardName}</h4>						
 						{(() => softSkills.languages.map(oneLang => (
 							<div>
 								<span>{oneLang.lang}</span>
 								<div className="progress">
-								<div style={{'width': `${oneLang.level}%`}}><span>{oneLang.level}</span></div>
+								<div style={{'width': `${oneLang.level}%`}}><span className='whiteBar'>{oneLang.level}%</span></div>
 								</div>
 							</div>
 							)))()}						
@@ -97,7 +108,11 @@ export default function LayerInfo(props) {
 				];
 				break
 			default:
-				formedContend = [<Photo size="big" />, <HelloInfo />]
+				formedContend = (
+					<div id='helloInfo'>
+						<Photo size="big" />
+						<HelloInfo />						
+					</div>)
 		}
 		return formedContend
 
@@ -107,10 +122,7 @@ export default function LayerInfo(props) {
 	return (
 
 		<div id="layerForInfo">
-			{formContentInCard()}
-			<a target="_blank" rel="noopener noreferrer" href={require('../materials/CV_AleksandrGribko.pdf')}>
-					Download my CV/Resume
-			</a>
+			{formContentInCard()}			
 		</div>
 	)
 }

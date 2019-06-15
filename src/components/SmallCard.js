@@ -7,15 +7,18 @@ export default function SmallCard(props) {
 			<div
 				className="flex"
 				onClick={props.onClick}
-				style={{'z-index': '9999', 'position': 'relative'}}				
+				style={{ "z-index": "9999", position: "relative" }}
 			>
 				<Photo size="small" />
 				<h3>Aleksandr Gribko</h3>
 			</div>
 			<div style={{ display: "block", "text-align": "right" }}>
-				<a onClick={props.onClick}>
+				<button
+					onClick={props.onClick}
+					style={{ color: "white", "background-color": "#890506", 'border': 'none', 'border-radius': '4px', 'padding': '4px' }}
+				>
 					Go back to hallo page
-				</a>
+				</button>
 			</div>
 		</div>
 	);

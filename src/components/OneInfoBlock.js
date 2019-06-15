@@ -1,20 +1,21 @@
 import React from 'react'
-
 import '../css/oneInfoBlock.css'
 
 export default function OneInfoBlock(props){
 	
 	//	name={props.name}
     //    id={props.id}
-    //    link={props.link}      
+    //    link={props.link} 
+    //	props.cardName     
 
 	return(
+		<div className='oneBlock'>
 		<a onClick={() => props.switchLayer(props.id, props.name)}>
-			<div className='oneBlock'>				
-				<img className='imgInfo' src={require(`./../materials/${props.link}.png`)} />
-				<span className='textInfo'>{props.name}</span>				
-			</div>
+							
+				<img src={require(`./../materials/${props.link}.svg`)} />
+				<span>{props.name}</span>				
 			
-		</a>
+		</a>			
+		</div>
 	)
 }

@@ -1,3 +1,287 @@
+.projectPage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectPage .left {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.projectPage .left .mainCut {
+  max-width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+}
+.projectPage .left .mainFull {
+  position: fixed;
+  display: block;
+  z-index: 991;
+  top: 50%;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  max-height: 90%;
+  max-width: 90%;
+  border: 5px solid #890506;
+  border-radius: 5px;
+}
+.projectPage .left .mobileCut {
+  max-width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.projectPage .left .mobileFull {
+  position: fixed;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  z-index: 991;
+  top: 50%;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  border: 5px solid #890506;
+  border-radius: 5px;
+}
+.projectPage .left .imgInfo {
+  text-align: center;
+  font-style: italic;
+  color: #A6A8A7;
+}
+.projectPage .left .mobileCut:hover {
+  transform: scale(1.1, 1.1);
+}
+.projectPage .left .mainCut:hover {
+  transform: scale(1.1, 1.1);
+}
+.projectPage .right {
+  height: 90%;
+  margin-top: 10px;
+  margin-bottom: 0;
+  border-radius: 20px;
+  display: grid;
+  grid-template-areas: "pro pro pro" "tech ski ski" "desc desc desc" "lin lin lin";
+  grid-template-rows: 20% 40% 25% 15%;
+  grid-gap: 10px;
+}
+.projectPage .right .pro {
+  grid-area: pro;
+  text-align: center;
+}
+.projectPage .right .lin {
+  grid-area: lin;
+  align-self: center;
+  text-align: center;
+}
+.projectPage .right a:hover {
+  font-weight: bold;
+}
+.projectPage .right .tech {
+  grid-area: tech;
+}
+.projectPage .right .ski {
+  grid-area: ski;
+}
+.projectPage .right .desc {
+  grid-area: desc;
+}
+.projectPage .right h2 {
+  text-align: center;
+}
+.projectPage .right h3, .projectPage .right p, .projectPage .right ul {
+  padding-left: 20px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.projectPage .right ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-position: inside;
+}
+.projectPage .right li {
+  list-style-type: circle;
+}
+.projectPage .right a {
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.projectPage .right p {
+  padding-bottom: 10px;
+}
 
+#project1 .right {
+  background-color: #031217;
+  color: #70A589;
+}
+#project1 .right h2 {
+  color: #EE4037;
+}
+#project1 .right a {
+  color: #EE4037;
+}
+
+#project2 .right {
+  background-color: #FDF27C;
+  color: #455D4D;
+}
+#project2 .right h2 {
+  color: #007bff;
+}
+#project2 .right a {
+  color: #007bff;
+}
+
+#project3 .right {
+  background-color: #c7956d;
+  color: #2b222c;
+}
+#project3 .right h2 {
+  color: #5e4352;
+}
+#project3 .right a {
+  color: #5e4352;
+}
+
+#project4 .right {
+  background-color: #7FCAC3;
+  color: black;
+}
+#project4 .right h2 {
+  color: #FF003C;
+}
+#project4 .right a {
+  color: #FF003C;
+}
+
+#project5 .right {
+  background-color: #d4af37;
+  color: #82371c;
+}
+#project5 .right h2 {
+  color: white;
+}
+#project5 .right a {
+  color: white;
+}
+
+#project6 .right {
+  background-color: black;
+  color: white;
+}
+#project6 .right h2 {
+  color: #50c878;
+}
+#project6 .right a {
+  color: #50c878;
+}
+
+#project7 .right {
+  background-color: #017069;
+  color: #eeeeee;
+}
+#project7 .right h2 {
+  color: black;
+}
+#project7 .right a {
+  color: black;
+}
+
+#project8 .right {
+  background-color: #DEDAE7;
+  color: #2F072A;
+}
+#project8 .right h2 {
+  color: #8F0732;
+}
+#project8 .right a {
+  color: #8F0732;
+}
+
+.left {
+  width: 35%;
+  height: 95%;
+}
+
+.right {
+  width: 65%;
+  height: 100%;
+}
+
+.slides-container {
+  max-width: 800px;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+
+.w3-left,
+.w3-right,
+.w3-badge {
+  cursor: pointer;
+}
+
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+}
+
+@media only screen and (orientation: portrait) {
+  .projectPage {
+    flex-direction: column-reverse;
+  }
+  .projectPage .right {
+    width: 90%;
+    height: 70%;
+    margin-top: 5vh;
+  }
+  .projectPage .left {
+    flex-direction: row;
+    width: 100vw;
+    height: 30%;
+  }
+  .projectPage .left .mainCut {
+    max-height: 90%;
+    max-width: 40vw;
+    display: block;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .projectPage .left .imgInfo {
+    display: none;
+  }
+  .projectPage .left .mobileCut {
+    max-height: 90%;
+    max-width: 40vw;
+    display: block;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media only screen and (orientation: landscape) {
+  .projectPage {
+    flex-direction: row;
+  }
+
+  .mainCut {
+    max-height: 40%;
+    max-width: 100%;
+    z-index: 990;
+  }
+
+  .mobileCut {
+    max-height: 40%;
+    max-width: 100%;
+    z-index: 990;
+  }
+}
 
 /*# sourceMappingURL=projects.css.map */

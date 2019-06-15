@@ -24,3 +24,9 @@
   -webkit-transform: rotate(225deg);
 }
 
+@media only screen and (orientation: portrait) {
+  %arrow  {
+  visibility: hidden;
+}
+
+}
