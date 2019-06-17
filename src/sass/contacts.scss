@@ -12,13 +12,21 @@ li {
 	padding-left: 20px;
  	}
  	a:hover {
- 		font-weight: bold;
+ 		color: black;
+ 		text-decoration: underline;
  	}
 }
 
 .flex {
 	display: flex;	
-			
+
+}
+
+.navbar {
+	input{
+	
+	
+}
 }
 
 .navbar {
@@ -26,13 +34,13 @@ li {
 	position: fixed;	
 	justify-content: flex-end;
 	
-	font-size: 100%;
+	font-size: 1.5vmax;
 }
 
 @media (max-width: 435px){
 	li {
 	a {
-	font-size: 0.8rem;
+//	font-size: 0.8rem;
  	}
  }
 }
@@ -40,7 +48,7 @@ li {
 @media (max-width: 435px){
 	li {
 	a {
-	font-size: 0.7rem;
+//	font-size: 0.7rem;
  	}
  }
 }

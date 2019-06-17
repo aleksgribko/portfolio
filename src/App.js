@@ -7,17 +7,16 @@ import LayerInfo from './components/LayerInfo.js'
 import styled from 'styled-components'
 import $ from 'jquery'
 
+
 import './css/App.css';
 
 function App() {  
-
+  
 // cool colors #FF003C #4ea1fd #890506
 
-let [identificator, setIdentificator] = useState(null)
 let [cardName, setCardName] = useState(null)
 
-  function switchLayer(identify, name){
-    setIdentificator(identify)
+  function switchLayer(name){
     setCardName(name)
   }
     
@@ -28,8 +27,7 @@ let [cardName, setCardName] = useState(null)
       <div id="project0back"></div>
       <div id='project0' className='flex'> 
         
-          <LayerInfo 
-            identificator = {identificator}
+          <LayerInfo             
             getBackIndentificator = {switchLayer}
             cardName= {cardName}
           />   

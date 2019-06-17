@@ -1,22 +1,25 @@
 .projectPage {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 92vh;
+  margin-top: 8vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border-radius: 20px;
+  display: grid;
+  grid-template-areas: "pro pro pro pro" "lin lin lin lin" "tech ski desc desc" "pic pic pic pic";
+  grid-template-rows: 10% 7% 27% 50%;
+  grid-gap: 10px;
 }
-.projectPage .left {
+.projectPage .pic {
   display: flex;
-  flex-direction: column;
-  background-color: white;
 }
-.projectPage .left .mainCut {
+.projectPage .pic .mainCut {
   max-width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5%;
+  border: 3px solid black;
 }
-.projectPage .left .mainFull {
+.projectPage .pic .mainFull {
   position: fixed;
   display: block;
   z-index: 991;
@@ -28,13 +31,14 @@
   border: 5px solid #890506;
   border-radius: 5px;
 }
-.projectPage .left .mobileCut {
+.projectPage .pic .mobileCut {
   max-width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 3px solid black;
 }
-.projectPage .left .mobileFull {
+.projectPage .pic .mobileFull {
   position: fixed;
   display: block;
   max-width: 90%;
@@ -46,190 +50,156 @@
   border: 5px solid #890506;
   border-radius: 5px;
 }
-.projectPage .left .imgInfo {
+.projectPage .pic .imgInfo {
+  align-self: center;
   text-align: center;
   font-style: italic;
   color: #A6A8A7;
 }
-.projectPage .left .mobileCut:hover {
+.projectPage .pic .mobileCut:hover {
   transform: scale(1.1, 1.1);
 }
-.projectPage .left .mainCut:hover {
+.projectPage .pic .mainCut:hover {
   transform: scale(1.1, 1.1);
 }
-.projectPage .right {
-  height: 90%;
-  margin-top: 10px;
-  margin-bottom: 0;
-  border-radius: 20px;
-  display: grid;
-  grid-template-areas: "pro pro pro" "tech ski ski" "desc desc desc" "lin lin lin";
-  grid-template-rows: 20% 40% 25% 15%;
-  grid-gap: 10px;
-}
-.projectPage .right .pro {
+.projectPage .pro {
   grid-area: pro;
   text-align: center;
 }
-.projectPage .right .lin {
+.projectPage .pic {
+  grid-area: pic;
+}
+.projectPage .lin {
   grid-area: lin;
   align-self: center;
   text-align: center;
 }
-.projectPage .right a:hover {
-  font-weight: bold;
+.projectPage .lin a:hover {
+  color: white !important;
+  text-decoration: none;
 }
-.projectPage .right .tech {
+.projectPage .tech {
   grid-area: tech;
 }
-.projectPage .right .ski {
+.projectPage .ski {
   grid-area: ski;
 }
-.projectPage .right .desc {
+.projectPage .desc {
   grid-area: desc;
 }
-.projectPage .right h2 {
+.projectPage h2 {
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.projectPage .right h3, .projectPage .right p, .projectPage .right ul {
+.projectPage h3, .projectPage p, .projectPage ul {
   padding-left: 20px;
   margin-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.projectPage .right ul {
+.projectPage ul {
   padding: 0px;
   margin: 0px;
   list-style-position: inside;
 }
-.projectPage .right li {
+.projectPage li {
   list-style-type: circle;
 }
-.projectPage .right a {
+.projectPage a {
   padding-bottom: 20px;
   padding-left: 20px;
 }
-.projectPage .right p {
+.projectPage p {
   padding-bottom: 10px;
 }
 
-#project1 .right {
+#project1 {
   background-color: #031217;
   color: #70A589;
 }
-#project1 .right h2 {
+#project1 h2 {
   color: #EE4037;
 }
-#project1 .right a {
+#project1 a {
   color: #EE4037;
 }
 
-#project2 .right {
+#project2 {
   background-color: #FDF27C;
   color: #455D4D;
 }
-#project2 .right h2 {
+#project2 h2 {
   color: #007bff;
 }
-#project2 .right a {
+#project2 a {
   color: #007bff;
 }
 
-#project3 .right {
+#project3 {
   background-color: #c7956d;
   color: #2b222c;
 }
-#project3 .right h2 {
+#project3 h2 {
   color: #5e4352;
 }
-#project3 .right a {
+#project3 a {
   color: #5e4352;
 }
 
-#project4 .right {
+#project4 {
   background-color: #7FCAC3;
   color: black;
 }
-#project4 .right h2 {
+#project4 h2 {
   color: #FF003C;
 }
-#project4 .right a {
+#project4 a {
   color: #FF003C;
 }
 
-#project5 .right {
+#project5 {
   background-color: #d4af37;
   color: #82371c;
 }
-#project5 .right h2 {
+#project5 h2 {
   color: white;
 }
-#project5 .right a {
+#project5 a {
   color: white;
 }
 
-#project6 .right {
+#project6 {
   background-color: black;
   color: white;
 }
-#project6 .right h2 {
+#project6 h2 {
   color: #50c878;
 }
-#project6 .right a {
+#project6 a {
   color: #50c878;
 }
 
-#project7 .right {
+#project7 {
   background-color: #017069;
   color: #eeeeee;
 }
-#project7 .right h2 {
+#project7 h2 {
   color: black;
 }
-#project7 .right a {
+#project7 a {
   color: black;
 }
 
-#project8 .right {
+#project8 {
   background-color: #DEDAE7;
   color: #2F072A;
 }
-#project8 .right h2 {
+#project8 h2 {
   color: #8F0732;
 }
-#project8 .right a {
+#project8 a {
   color: #8F0732;
-}
-
-.left {
-  width: 35%;
-  height: 95%;
-}
-
-.right {
-  width: 65%;
-  height: 100%;
-}
-
-.slides-container {
-  max-width: 800px;
-}
-
-.slide {
-  display: none;
-  width: 100%;
-}
-
-.w3-left,
-.w3-right,
-.w3-badge {
-  cursor: pointer;
-}
-
-.w3-badge {
-  height: 13px;
-  width: 13px;
-  padding: 0;
 }
 
 @media only screen and (orientation: portrait) {

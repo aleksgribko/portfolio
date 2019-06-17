@@ -10,14 +10,14 @@
 }
 
 .arrowDown {
-  top: 90vh;
+  top: 93vh;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
 
 .arrowUp {
   display: none;
-  top: 10vh;
+  top: 2vh;
   transform: rotate(225deg);
   -webkit-transform: rotate(225deg);
 }
@@ -28,4 +28,4 @@
   }
 }
 
-/*# sourceMappingURL=scrollelement.css.map */
+/*# sourceMappingURL=scrollElement.css.map */

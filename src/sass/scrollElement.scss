@@ -4,6 +4,7 @@
   height: 20px;
   top: 90vh;
   left: 50%;
+  
   border: solid black;
   border-width: 0 3px 3px 0;  
   padding: 3px; 
@@ -11,7 +12,7 @@
 
 .arrowDown { 
 @extend %arrow;
-  top: 90vh; 
+  top: 93vh; 
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
@@ -19,7 +20,7 @@
 .arrowUp {
   @extend %arrow;  
   display: none;
-  top: 10vh;  
+  top: 2vh;  
   transform: rotate(225deg);
   -webkit-transform: rotate(225deg);
 }

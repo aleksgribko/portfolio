@@ -40,27 +40,14 @@ export default function Projects(){
     
     let projects = projectsData.map((project, ind, arr) => (
     <div id={project.id} className='projectPage'>
-
-     
-      <div className='left'>
-        <img className='mainCut' onClick={(e) => togglerClass(e.target)} src={require(`../materials/project${ind+1}/mainCut.jpg`)}  alt='example' />
-       
-       <p className='imgInfo'>{project.pictureText[0]}</p>
-
-       <img className='mobileCut' onClick={(e) => togglerClass(e.target)} src={require(`../materials/project${ind+1}/mobileCut.jpg`)}  alt='example' />
-       <p className='imgInfo'>{project.pictureText[1]}</p>
-       </div>      
-
- 
-      <div className='right'>
-       
+          
       <div className='pro'>
-        <h2 >Project {ind+1} of {arr.length}</h2>
-        <p>{project.name}</p>
+        <h2>Project: {project.name}</h2>
+        <p>{project.what}</p>
       </div>
       <div className='lin'>
-        <a href={project.git}><span>GIT link</span></a>
-        <a href={project.site}><span>Visit website</span></a>
+        <a href={project.git} style={{'display': `${project.git ? '' : 'none'}`}}><span>GIT link</span></a>
+        <a href={project.site} style={{'display': `${project.site ? '' : 'none'}`}}><span>Visit website</span></a>
       </div>
       <div className='tech'>
         <h2>Used technologies:</h2>
@@ -70,8 +57,17 @@ export default function Projects(){
       <h2>Acquired skills:</h2>
       <ul><p>{project.skills.map(skill => (<li>{skill}</li>))}</p></ul>
       </div>
-      <p className='desc'>Description: {project.description}</p>
-      </div>     
+      <div className='desc'> 
+      <h2>Description:</h2>
+      <p>{project.description}</p>
+      </div>
+      <div className='pic'>
+      <p className='imgInfo'>{project.pictureText[0]}</p>
+      <img className='mainCut' onClick={(e) => togglerClass(e.target)} src={require(`../materials/project${ind+1}/mainCut.jpg`)}  alt='example' />
+      <img className='mobileCut' onClick={(e) => togglerClass(e.target)} src={require(`../materials/project${ind+1}/mobileCut.jpg`)}  alt='example' />
+      <p className='imgInfo'>{project.pictureText[1]}</p>
+      </div>
+           
      
       
     </div>
@@ -85,9 +81,3 @@ export default function Projects(){
    </div>
   )
 }
-
-
- 
-
-
-

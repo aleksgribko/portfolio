@@ -1,53 +1,102 @@
-#helloScreen{    			
-    	display: grid;   
-    	padding-top: 10vmin; 				 
-	}
+.visible {
+	display: block;
+}
 
-#infoScreen {
-	padding-top: 15vmin; 
-	display: grid; 
+.hidden {
+	display: none;
+}
+
+.menuButton {
+	color: white;
+	background-color: rgb(137, 5, 6);
+	border: none;
+	border-radius: 4px;
+	padding: 2px;	
+}
+
+.menuButton:hover{
+	cursor: pointer;
 }
 
 
 
-@media only screen and (orientation: portrait) {
-    
-
-    #helloScreen,  #infoScreen{     
-        display: grid;	
-        grid-gap: 2vmin;  
-		grid-template-rows: 10vmin 10vmin;
-		grid-template-columns: 30vmin 30vmin 30vmin;	
-		padding-top: 0; 
-
+.buttonsMenu {
+	display: grid;
+	grid-gap: 2vmin;	
+	.oneBlock {
+		background-color: rgb(137, 5, 6);
+		border: none;		
+		border-radius: 4px;
+		text-align: center;
+		align-self: center;
 	}
 
-	.layerMenu {	
-	width: 95%;
+	.oneBlock:hover{
+		cursor: pointer;
+	}
+
+	span {
+		color: white;
+		font-size: 1.3vmax;
+	}
+}
+
+.contactField {
+	a {
+		text-decoration: none;
+		color: rgb(137, 5, 6);
+		font-size: 1.5em;
+		i {
+			font-size: 2em;
+			padding-right: 10%;
+		}
+	}
+}
+
+@media only screen and (orientation: portrait) {
+	.layerMenu {
+		width: 90%;
+		align-self: center;
+		text-align: justify;
+	}
+	.oneBlock {
+		padding-top: 1vh;
+		padding-bottom: 1vh;
+	}
+	.contactField{
+		padding-top: 3vh;
+	}
+
+	#textMenu {
+	font-size: 1.3vmax;
 }
 }
 
 @media only screen and (orientation: landscape) {
-
 	.layerMenu {
-	height: 90vmin;
+		width: 40vw;
+		max-height: 90vh;
+
+		//	margin-top: 50%;
+		//	transform: translate(0, -50%);
+	}
+
+	.buttonsMenu {
+		grid-gap: 2vmin;
+		width: 10vw;
+	}
+	.oneBlock {
+		padding-top: 3vh;
+		padding-bottom: 3vh;
+		span {
+			width: 80%;
+		}
+	}
+	#textMenu {
+		font-size: 2.4vmin;
+	}
+	.contactField{
+		padding-top: 1vh;
+	}
 	
 }
-
-    #infoScreen{    	
-		grid-gap: 2vmin;   	
-		grid-template-rows: 10vmin 10vmin 10vmin 10vmin 10vmin 10vmin;
-		grid-template-columns: 20vmin;	
-    }
-
-    #helloScreen{  
-    	grid-gap: 10vmin;   	
-		grid-template-rows: 20vmin 20vmin 20vmin;
-		grid-template-columns: 20vmin 20vmin;		 
-	}
-}
-
-
-
-
-

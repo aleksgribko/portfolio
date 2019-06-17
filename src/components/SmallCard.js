@@ -15,9 +15,9 @@ export default function SmallCard(props) {
 			<div style={{ display: "block", "text-align": "right" }}>
 				<button
 					onClick={props.onClick}
-					style={{ color: "white", "background-color": "#890506", 'border': 'none', 'border-radius': '4px', 'padding': '4px' }}
+					style={{ color: "white", "background-color": "#890506", 'border': 'none', 'border-radius': '4px', 'padding': '4px', 'font-size': '1.1vmax'}}
 				>
-					Go back to hallo page
+					Back to main page
 				</button>
 			</div>
 		</div>

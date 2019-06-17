@@ -10,7 +10,8 @@ li a {
   padding-left: 20px;
 }
 li a:hover {
-  font-weight: bold;
+  color: black;
+  text-decoration: underline;
 }
 
 .flex {
@@ -21,18 +22,7 @@ li a:hover {
   width: 97vw;
   position: fixed;
   justify-content: flex-end;
-  font-size: 100%;
-}
-
-@media (max-width: 435px) {
-  li a {
-    font-size: 0.8rem;
-  }
-}
-@media (max-width: 435px) {
-  li a {
-    font-size: 0.7rem;
-  }
+  font-size: 1.5vmax;
 }
 
 /*# sourceMappingURL=contacts.css.map */

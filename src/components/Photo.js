@@ -4,7 +4,7 @@ import '../css/photo.css'
 export default function Photo(props){
 	let param
 	if(props.size === 'big'){
-		param = {'max-width': '45vmin'}
+		param = {'max-width': '25vmax'}
 	} else {
 		param = {'width': '50px', 'height': '50px'}
 	}

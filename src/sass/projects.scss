@@ -35,22 +35,18 @@ $project8head: #8F0732;
 
 .projectPage {
 
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	height: 92vh;	
 
-	.left {
-		display: flex;
-		flex-direction: column;
-		background-color: white;
+  .pic {
+		display: flex;				
 
 		.mainCut{
 			max-width: 90%;			
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
-			padding-top: 5%;
+			
+			border: 3px solid black;
 			
 		}
 
@@ -72,6 +68,7 @@ $project8head: #8F0732;
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
+			border: 3px solid black;
 			
 			
 		}
@@ -92,6 +89,7 @@ $project8head: #8F0732;
 
 
 		.imgInfo {
+			align-self: center;
 			text-align: center;
 			font-style: italic;
 			color: #A6A8A7;
@@ -106,38 +104,41 @@ $project8head: #8F0732;
 		}		
 	}
 
-	.right {
-		height: 90%;
-		margin-top: 10px;
+
+	
 		
-		margin-bottom: 0;
+		margin-top: 8vh;		
+		margin-left: 1vw;
+		margin-right: 1vw;
 		border-radius: 20px;
 		display: grid;		
 		grid-template-areas:
-		'pro pro pro'
-		'tech ski ski'
-		'desc desc desc'
-		'lin lin lin';
-		grid-template-rows: 20% 40% 25% 15%;
+		'pro pro pro pro' 		
+		'lin lin lin lin'
+		'tech ski desc desc'
+		'pic pic pic pic';
+		grid-template-rows: 10% 7% 27% 50%;
 		grid-gap: 10px;
 
 		.pro{
-			grid-area: pro;
-			
+			grid-area: pro;			
 			text-align: center;
+		}
+
+		.pic{
+			grid-area: pic;				
 		}
 		
 		.lin{
 			grid-area: lin;
 			align-self: center;
 			text-align: center;	
-			
+			a:hover {
+				color: white !important;
+				text-decoration: none;
+			}
 		}
-
-		a:hover {
-			font-weight: bold;
-		}
-
+		
 		.tech{
 			grid-area: tech;
 		}
@@ -153,6 +154,8 @@ $project8head: #8F0732;
 
 		h2{			
 			text-align: center;
+			margin-top: 10px;
+			margin-bottom: 10px;
 		}
 		h3, p, ul{
 			padding-left: 20px;
@@ -182,11 +185,11 @@ $project8head: #8F0732;
 			padding-bottom: 10px;				
 		}
 
-	}
+	
 }
 
 #project1 {
-	.right {
+	
 		background-color: $project1back;		
 		color: $project1text;
 		h2{
@@ -195,10 +198,10 @@ $project8head: #8F0732;
 		a{
 			color: $project1head;
 		}
-	}
+	
 }
 #project2 {
-	.right {
+	
 		background-color: $project2back;
 		color: $project2text;
 		h2{
@@ -207,11 +210,11 @@ $project8head: #8F0732;
 		a{
 			color: $project2head;
 		}
-	}
+	
 }
 
 #project3 {
-	.right {
+
 		background-color: $project3back;
 		color: $project3text;
 		h2{
@@ -220,11 +223,11 @@ $project8head: #8F0732;
 		a{
 			color: $project3head;
 		}
-	}
+
 }
 
 #project4 {
-	.right {
+	
 		background-color: $project4back;
 		color: $project4text;
 		h2{
@@ -233,11 +236,11 @@ $project8head: #8F0732;
 		a{
 			color: $project4head;
 		}
-	}
+	
 }
 
 #project5 {
-	.right {
+	
 		background-color: $project5back;
 		color: $project5text;
 		h2{
@@ -246,11 +249,11 @@ $project8head: #8F0732;
 		a{
 			color: $project5head;
 		}
-	}
+	
 }
 
 #project6 {
-	.right {
+	
 		background-color: $project6back;
 		color: $project6text;
 		h2{
@@ -259,11 +262,11 @@ $project8head: #8F0732;
 		a{
 			color: $project6head;
 		}
-	}
+	
 }
 
 #project7 {
-	.right {
+	
 		background-color: $project7back;
 		color: $project7text;
 		h2{
@@ -272,11 +275,11 @@ $project8head: #8F0732;
 		a{
 			color: $project7head;
 		}
-	}
+	
 }
 
 #project8 {
-	.right {
+	
 		background-color: $project8back;
 		color: $project8text;
 		h2{
@@ -285,37 +288,9 @@ $project8head: #8F0732;
 		a{
 			color: $project8head;
 		}
-	}
+	
 }
 
-.left {
-	width: 35%;
-	height: 95%;
-}
-
-.right {
-	width: 65%;
-	height: 100%;
-}
-
-.slides-container{
-	max-width:800px;
-}
-
-.slide {
-	display: none;
-	width:100%;
-}
-.w3-left,
-.w3-right,
-.w3-badge {
-	cursor: pointer;
-}
-.w3-badge {
-	height: 13px;
-	width: 13px;
-	padding: 0;
-}
 
 @media only screen and (orientation: portrait) {
     .projectPage {
@@ -365,6 +340,7 @@ $project8head: #8F0732;
 @media only screen and (orientation: landscape) {
     .projectPage {
     	flex-direction: row;
+    	
     }
 
     .mainCut{

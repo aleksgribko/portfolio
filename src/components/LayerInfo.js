@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Photo from "./Photo.js";
 import HelloInfo from "./HelloInfo.js";
 import SmallCard from "./SmallCard.js"; 
-import { about, education, techExperience, legalExperience, technicalSkills, softSkills } from "./infoForCV.js";
+import { about, education, experience, skills } from "./infoForCV.js";
 import layerInfo from "../css/layerInfo.css";
 
 export default function LayerInfo(props) {
@@ -13,19 +13,27 @@ export default function LayerInfo(props) {
 		switch(props.cardName){
 			case 'About':
 				formedContend = [
-					<div className="infoCard">
+					<div className="infoCard widthInfo">
 						<SmallCard 
 						onClick = {() => props.getBackIndentificator(null)}/>
 						<h4 className='reddishColor'>{props.cardName}</h4>
 						<p>{about.about}</p>
 						<h4 className='reddishColor'>Hobbies</h4>
-						<p>{about.hobbies}</p>						
+						<p>{about.hobbies}</p>	
+						{(() => about.languages.map(oneLang => (
+							<div>
+								<span>{oneLang.lang}</span>
+								<div className="progress">
+								<div style={{'width': `${oneLang.level-5}%`}}><span className='whiteBar'>{oneLang.cert}</span></div>
+								</div>
+							</div>
+							)))()}						
 					</div>
 				];
 				break
 			case 'Education':
 				formedContend = [
-					<div className="infoCard">
+					<div className="infoCard widthInfo">
 						<SmallCard 
 						onClick = {() => props.getBackIndentificator(null)}/>						
 						<h4>{props.cardName}</h4>
@@ -39,77 +47,45 @@ export default function LayerInfo(props) {
 							)))()}							
 					</div>
 				];
-				break
-			case 'Tech Experience':
+				break			
+			case 'Experience':
 				formedContend = [
-					<div className="infoCard">
-						<SmallCard 
-						onClick = {() => props.getBackIndentificator(null)}/>
-						<h4>{props.cardName}</h4>						
-						<div>
-							<h2 className='reddishColor'>{techExperience.quant}</h2>
-							<p>{techExperience.descr1}</p>
-							<h2 className='reddishColor'>{techExperience.term}</h2>
-							<p>{techExperience.descr2}</p>			
-							<p>{techExperience.text}</p>				
-						</div>											
-					</div>
-				];
-				break
-			case 'Legal Experience':
-				formedContend = [
-					<div className="infoCard">
+					<div className="infoCard widthInfo">
 						<SmallCard 
 						onClick = {() => props.getBackIndentificator(null)}/>
 						<h4>{props.cardName}</h4>
-						{(() => legalExperience.places.map(onePlace => (
+						{(() => experience.places.map(onePlace => (
 							<div>
-								<span className='reddishColor'>{onePlace.company} </span><span className='textSmall'>{onePlace.term}</span>
-								<p className='textSmall'>{onePlace.position}</p>
-								<p className='textSmall'>{onePlace.spec}</p>								
+								<span className='reddishColor'>{onePlace.company}, </span><span>{onePlace.spec}</span>
+								<p><span className='textSmall'>{onePlace.position}, </span><span className='textSmall'>{onePlace.term}</span></p>
 								<hr />								
 							</div>
 							)))()}							
 					</div>
 				];
 				break
-			case 'Technical Skills':
+			case 'Skills':
 				formedContend = [
-					<div className="infoCard">
+					<div className="infoCard widthInfo">
 						<SmallCard 
 						onClick = {() => props.getBackIndentificator(null)}/>
 						<h4>{props.cardName}</h4>	
-						{(() => technicalSkills.skills.map(oneSkill => (
-							<div>
+						<div className='skills'>
+						{(() => skills.skills.map(oneSkill => (
+							<div className='skillOne'>
 								<span>{oneSkill.skill}</span>
 								<div className="progress">
-								<div className='whiteBar' style={{'width': `${oneSkill.level}%`}}>{oneSkill.level}%</div>
+								<div className='whiteBar' style={{'text-align': 'right', 'width': `${oneSkill.numbProj +2}5%`}}>{oneSkill.numbProj} {oneSkill.numbProj == 1 ? 'project' : 'projects'}</div>
 								</div>
 							</div>
-							)))()}						
+							)))()}	
+							</div>					
 					</div>
 				];
-				break
-			case 'Languages':
-				formedContend = [
-					<div className="infoCard">
-						<SmallCard 
-						onClick = {() => props.getBackIndentificator(null)}/>
-						<h4>{props.cardName}</h4>						
-						{(() => softSkills.languages.map(oneLang => (
-							<div>
-								<span>{oneLang.lang}</span>
-								<div className="progress">
-								<div style={{'width': `${oneLang.level}%`}}><span className='whiteBar'>{oneLang.level}%</span></div>
-								</div>
-							</div>
-							)))()}						
-					</div>
-				];
-				break
+				break			
 			default:
 				formedContend = (
-					<div id='helloInfo'>
+					<div id='helloInfo' className='widthMain'>
 						<Photo size="big" />
 						<HelloInfo />						
 					</div>)

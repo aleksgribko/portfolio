@@ -1,14 +1,27 @@
 #layerForInfo {
-	flex-basis: 40%;
+	//	flex-basis: 40%;
 	color: white;
-	a{
+	a {
 		color: black;
 	}
+}
+
+.skills{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;		 
 }
 
 .infoCard {
 	max-height: 90vh;
 	width: 100%;
+	font-size: 1.3vmax;
+	
+	p{
+		margin-top: 10px;
+		padding-left: 25px;
+		color: black;
+	}
 
 	h3 {
 		padding-left: 10px;
@@ -20,53 +33,92 @@
 	}
 }
 
-.progress{
-	height: 1rem;	
-	width: 100vh / 10;	
-	
-	border: solid black 1px;
-  	
-		div{
-			position: relative;
-			height: 1rem;			
-			background-color: #fc6c7c;
-			font-size: 0.8rem;		
+.progress {
+	height: 1.5vmax;
+	width: 100vh / 10;
 
-		}
+	border: solid black 1px;
+
+	div {
+		position: relative;
+		height: 1.5vmax;
+		background-color: #890506;
+		font-size: 1.2vmax;
+		padding-right: 5%;
+	}
 }
 
 .textSmall {
-	font-size: 0.8rem;
+	font-size: 1.1vmax;
+	text-align: center;
 }
 
-.reddishColor{
+.reddishColor {
 	color: #890506;
 }
-.whiteBar{
+.whiteBar {
 	color: white;
 }
 
-#helloInfo{
+#helloInfo {
 	display: flex;
 	flex-direction: column;
+	div{
+		font-size: 1.2vmax;
+	}
 }
 
 @media only screen and (orientation: portrait) {
-    #helloInfo{
+	#helloInfo {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
 
-    	justify-content: center;
-    	align-items: center;   
-    	text-align: center;
-    }
-
-    #layerForInfo {
-    width:90%;
-	min-height: 70vh;
-	padding-top: 50px;
-	padding-left: 5px;
-	padding-right: 5px;
-	flex-basis: 70%;
+	#layerForInfo {
+		width: 90%;
 		
-}
+		
+		padding-left: 5px;
+		padding-right: 5px;		
+		
+		.infoCard{
+			height: 70vh;
+			flex-basis: 70%;
+			padding-top: 10%;
+		}
+	}
+
+	.skills{	
+		.skillOne{
+			flex-basis: 95%;
+		} 
 }
 
+	
+}
+
+@media only screen and (orientation: landscape) {
+	#layerForInfo {
+		.infocard{
+		margin-left: 10vw;
+		margin-right: 10vw;
+		}
+	}
+
+	.widthInfo {
+		width: 60vw;
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
+
+	.widthMain {
+		width: 50vw;
+	}
+
+	.skills{	
+		.skillOne{
+			flex-basis: 45%;
+		} 
+	}
+}
