@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../css/scrollElement.css";
 import projectsData from "./projectsData.js";
 import $ from "jquery";
@@ -13,15 +13,21 @@ export default function ScrollElement(props) {
 
 	function clickedArrowUp() {
 		$(".arrowDown").css("display", "block");
-		if (position - 1 >= 0) {
-			setPosition(--position);
+		if (position - 1 >= 0) {	
+		window.scrollTo({
+			top: $(`#project${position-1}`).position().top,
+			behavior: "smooth"
+		});
 		}
 	}
 
 	function clickedArrowDown() {
 		$(".arrowUp").css("display", "block");
 		if (position + 1 <= numberOfProjects) {
-			setPosition(++position);
+			window.scrollTo({
+			top: $(`#project${position+1}`).position().top,
+			behavior: "smooth"
+		});
 		}
 	}
 
@@ -29,7 +35,7 @@ export default function ScrollElement(props) {
 
 	window.addEventListener(
 		"scroll",
-		debounce(event => {
+		debounce(event => {  							// debounce( I use for debouncing many scrolls
 			event.stopImmediatePropagation();
 			let scrollTop = $(window).scrollTop(); // scrollTop - расстояние от вехра до viewport	+600
 
@@ -55,10 +61,21 @@ export default function ScrollElement(props) {
 
 			for (let i = 0; i < numberOfProjects; i++) {
 				if (
-					$(`#project${i}`).position().top + 1 < scrollTop && // element.position().top - расстояние от вехра до element	+600
-					$(`#project${i + 1}`).position().top > scrollTop
+					$(`#project${i}`).position().top <= scrollTop && // element.position().top - расстояние от вехра до element	+600
+					$(`#project${i + 1}`).position().top >= scrollTop &&
+					position !== i
+				) {					
+					setPosition(i);
+					break
+				} else if (
+					$(`#project${numberOfProjects}`).position().top <= scrollTop
 				) {
-					if (document.body.getBoundingClientRect().top > scrollPos) {						
+					setPosition(numberOfProjects);
+				}
+
+				/*	scroll reader not in use
+
+				if (document.body.getBoundingClientRect().top > scrollPos) {						
 						if (i >= 0) {
 							setPosition(i);
 							scrollPos = document.body.getBoundingClientRect()
@@ -72,26 +89,23 @@ export default function ScrollElement(props) {
 							scrollPos = document.body.getBoundingClientRect()
 								.top;
 						}
-					}
-				}
+					} */
+				
 			}
 
 			scrollPos = document.body.getBoundingClientRect().top;
-		}, 50)
+		}, 50)  										// , 50)   end of debouncing
 	);
-
-	useEffect(() => {
-		window.scrollTo({
-			top: $(`#project${position}`).position().top,
-			behavior: "smooth"
-		});
-	});
-
+	
 	return (
 		<div>
-			<div id="photoNameScroll" onClick={() => setPosition(0)}>
+			<div id="photoNameScroll" onClick={() => 
+				window.scrollTo({
+				top: $('#project0').position().top,
+				behavior: "smooth"
+		})}>
 				<Photo />
-				<h3>Aleksandr Gribko</h3>
+				<h3><a>Aleksandr Gribko</a></h3>
 			</div>
 			<div className="squareArrow" onClick={clickedArrowUp}>
 				<span className="arrowUp" />
@@ -102,3 +116,5 @@ export default function ScrollElement(props) {
 		</div>
 	);
 }
+
+
