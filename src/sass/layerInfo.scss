@@ -13,8 +13,13 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+
+	.skillOne {
+			flex-basis: 45%;
+		}
 }
 
+		
 .infoCard {
 	max-height: 90vh;
 	max-height: calc(var(--vh, 1vh) * 90);
@@ -106,11 +111,7 @@
 		}
 	}
 
-	.skills {
-		.skillOne {
-			flex-basis: 100%;
-		}
-	}
+	
 }
 
 @media only screen and (orientation: landscape) {
@@ -131,9 +132,5 @@
 		width: 50vw;
 	}
 
-	.skills {
-		.skillOne {
-			flex-basis: 45%;
-		}
-	}
+	
 }
