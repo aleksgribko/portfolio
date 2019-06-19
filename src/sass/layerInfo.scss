@@ -17,6 +17,7 @@
 
 .infoCard {
 	max-height: 90vh;
+	max-height: calc(var(--vh, 1vh) * 90);
 	width: 100%;
 	font-size: 1.3vmax;
 
@@ -99,7 +100,8 @@
 		padding-right: 5px;
 
 		.infoCard {
-			height: 65vh;		
+			height: 65vh;
+			height: calc(var(--vh, 1vh) * 65);		
 			padding-top: 10%;
 		}
 	}
