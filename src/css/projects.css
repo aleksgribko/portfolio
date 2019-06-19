@@ -1,8 +1,8 @@
 .projectPage {
-  height: 92vh;
-  height: calc(var(--vh, 1vh) * 92);
-  margin-top: 8vh;
-  margin-top: calc(var(--vh, 1vh) * 8);
+  height: 98vh;
+  height: calc(var(--vh, 1vh) * 98);
+  margin-top: 2vh;
+  margin-top: calc(var(--vh, 1vh) * 2);
   border-radius: 20px;
   display: grid;
   grid-gap: 10px;
@@ -20,7 +20,8 @@
   z-index: 498;
   height: 100%;
   text-align: center;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .projectPage .pic .mainFull {
   position: fixed;
@@ -32,12 +33,6 @@
   max-height: 90%;
   max-width: 90%;
   border: 5px solid black;
-}
-.projectPage .pic .imgInfo {
-  align-self: center;
-  font-style: italic;
-  color: white;
-  text-shadow: 1px 1px 3px black;
 }
 .projectPage .pro {
   grid-area: pro;

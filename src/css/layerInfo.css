@@ -116,6 +116,15 @@
   .widthMain {
     width: 50vw;
   }
+
+  .infoCard ul h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .infoCard ul p {
+    margin-top: 0px;
+    margin-bottom: 0em;
+  }
 }
 
 /*# sourceMappingURL=layerInfo.css.map */

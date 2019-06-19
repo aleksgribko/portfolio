@@ -118,7 +118,8 @@
 	#layerForInfo {
 		.infocard {
 			margin-left: 10vw;
-			margin-right: 10vw;
+			margin-right: 10vw;		
+			
 		}
 	}
 
@@ -132,5 +133,18 @@
 		width: 50vw;
 	}
 
+.infoCard {
+	ul{
+		h4{
+		margin-top: 0px;
+    margin-bottom: 0px;
+	} 
+	p{
+		margin-top: 0px;
+    margin-bottom: 0em;
+	}
+	}
+	
+}
 	
 }

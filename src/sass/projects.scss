@@ -31,10 +31,10 @@ $project8text: #2f072a;
 $project8head: #8f0732;
 
 .projectPage {
-	height: 92vh;
-	height: calc(var(--vh, 1vh) * 92);
-	margin-top: 8vh;
-	margin-top: calc(var(--vh, 1vh) * 8);
+	height: 98vh;
+	height: calc(var(--vh, 1vh) * 98);
+	margin-top: 2vh;
+	margin-top: calc(var(--vh, 1vh) * 2);
 	border-radius: 20px;
 	display: grid;
 	grid-gap: 10px;
@@ -53,7 +53,9 @@ $project8head: #8f0732;
 			z-index: 498;
 			height: 100%;
 			text-align: center;
-			margin: 0;
+			margin-left: auto;
+			margin-right: auto;
+
 		}
 
 		.mainFull {
@@ -66,13 +68,6 @@ $project8head: #8f0732;
 			max-height: 90%;
 			max-width: 90%;
 			border: 5px solid black;
-		}
-
-		.imgInfo {
-			align-self: center;
-			font-style: italic;
-			color: white;
-			text-shadow: 1px 1px 3px black;
 		}
 
 		

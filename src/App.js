@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import AllInfo from './components/AllInfo.js'
 import Contacts from './components/Contacts.js'
 import Projects from './components/Projects.js'
@@ -12,20 +12,20 @@ function App() {
 // cool colors #FF003C #4ea1fd #890506
 
 let [cardName, setCardName] = useState(null)
-let [vh, setVh] = useState(window.innerHeight * 0.01)
+//let [vh, setVh] = useState(window.innerHeight * 0.01)
 
-window.addEventListener('resize', () => {
-  setVh(window.innerHeight * 0.01)
-})
+//window.addEventListener('resize', () => {
+//  setVh(window.innerHeight * 0.01)
+//})
 
 
   function switchLayer(name){
     setCardName(name)
   }
 
-  useEffect(() => {
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  })
+//  useEffect(() => {
+//    document.documentElement.style.setProperty('--vh', `${vh}px`);
+//  })
     
   return (
     <div className="App" id="mainPagesFlow">  
