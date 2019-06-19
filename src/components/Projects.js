@@ -73,12 +73,14 @@ export default function Projects() {
           <p>{project.description}</p>
         </div>
         <div className="pic">
+        <div className='limitsImg'>
           <img
             className="mainCut"
             onClick={e => togglerClass(e.target)}
             src={require(`../materials/project${ind + 1}/mainCut.jpg`)}
             alt="example"
           />
+         </div>
         </div>
       </div>
     ));
