@@ -65,7 +65,7 @@ export default class AllInfo extends React.Component {
 						>
 							language
 						</span>
-						, I always wanted to work in an IT team with cutting age
+						, I always wanted to work in an IT team with cutting edge 
 						technologies and challenging projects. Having{" "}
 						<span
 							className="Education menuButton"
@@ -73,7 +73,7 @@ export default class AllInfo extends React.Component {
 						>
 							education
 						</span>{" "}
-						in IT and IP law I was working from the beggining of my
+						in IT and IP law I was working from the beginning of my
 						career either with the protection of new technologies or
 						on its usage. I have{" "}
 						<span
@@ -86,19 +86,19 @@ export default class AllInfo extends React.Component {
 					</p>
 
 					<p>
-						At some point I felt that bare application of quite
+						At some point, I felt that the bare application of quite
 						stable legal knowledge doesn’t develop me as much as I
-						would like too. Moreover I am a{" "}
+						would like too. Moreover, I am a{" "}
 						<span
 							className="about menuButton"
 							onClick={() => this.props.switchLayer("About")}
 						>
 							team player
 						</span>{" "}
-						and was dreaming to work with people of my specialistion
+						and was dreaming to work with people of my specialization 
 						where everyone is learning from each other in an agile
-						way. In the IT world changes are happening everyday and
-						I feel exited to follow these changes and keep this fast
+						way. In the IT world changes are happening every day and
+						I feel excited to follow these changes and keep this fast
 						pace in acquiring new{" "}
 						<span
 							className="technicalSkills menuButton"
