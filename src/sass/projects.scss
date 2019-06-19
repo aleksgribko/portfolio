@@ -73,9 +73,7 @@ $project8head: #8f0732;
 			text-shadow: 1px 1px 3px black;
 		}
 
-		.mainCut:hover {
-			transform: scale(1.1, 1.1);
-		}
+		
 	}
 
 	.pro {
@@ -119,6 +117,7 @@ $project8head: #8f0732;
 	h3 {
 		font-size: 1.6vmax;
 		text-align: center;
+		padding-bottom: 1em;
 	}
 
 	h3,
@@ -145,7 +144,8 @@ $project8head: #8f0732;
 
 	a {
 		padding-bottom: 20px;
-		padding-left: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	p,
@@ -274,6 +274,7 @@ $project8head: #8f0732;
 
 		.ski {
 			padding-right: 4vw;
+			padding-left: 4vw
 		}
 		.desc {
 			padding-left: 4vw;
@@ -341,8 +342,9 @@ $project8head: #8f0732;
 		ul {
 			padding-left: 10px;
 		}
-		.desc {
-			padding-right: 10px;
+		.desc, .tech, .ski {
+			padding-left: 1vw;
+			padding-right: 1vw;
 		}
 	}
 
@@ -351,5 +353,11 @@ $project8head: #8f0732;
 	}
 	.mobileCut {
 		z-index: 990;
+	}	
+}
+
+@media (hover: hover) {
+    .mainCut:hover {
+    	transform: scale(1.1, 1.1);
 	}
 }

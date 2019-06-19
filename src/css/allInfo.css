@@ -9,6 +9,7 @@
 .buttonsCVback {
   color: white;
   background-color: #890506;
+  padding: 1em;
 }
 
 .buttonsCVback:hover {
@@ -86,7 +87,8 @@
   }
 
   #textMenu {
-    font-size: 1.3vmax;
+    font-size: 1.4vmax;
+    line-height: 1.4em;
   }
 }
 @media only screen and (orientation: landscape) {
@@ -109,7 +111,8 @@
   }
 
   #textMenu {
-    font-size: 2.3vmin;
+    font-size: 2.4vmin;
+    line-height: 1.4em;
   }
 
   .contactField {

@@ -4,6 +4,13 @@ import "../css/projects.css";
 import $ from "jquery";
 
 export default function Projects() {
+
+  window.addEventListener("orientationchange", function() {
+    $('.mainCut').css("maxHeight", "50%")
+    $('.mainCut').css("maxHeight", "100%")
+});
+
+
   function togglerClass(target) {
     if (target.classList == "mainCut") {
       target.classList.add("mainFull");

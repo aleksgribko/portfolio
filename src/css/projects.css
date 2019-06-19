@@ -37,9 +37,6 @@
   color: white;
   text-shadow: 1px 1px 3px black;
 }
-.projectPage .pic .mainCut:hover {
-  transform: scale(1.1, 1.1);
-}
 .projectPage .pro {
   grid-area: pro;
   text-align: center;
@@ -74,6 +71,7 @@
 .projectPage h3 {
   font-size: 1.6vmax;
   text-align: center;
+  padding-bottom: 1em;
 }
 .projectPage h3,
 .projectPage p,
@@ -95,7 +93,8 @@
 }
 .projectPage a {
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .projectPage p,
 .projectPage a {
@@ -216,6 +215,7 @@
   }
   .projectPage .ski {
     padding-right: 4vw;
+    padding-left: 4vw;
   }
   .projectPage .desc {
     padding-left: 4vw;
@@ -269,8 +269,9 @@
   .projectPage ul {
     padding-left: 10px;
   }
-  .projectPage .desc {
-    padding-right: 10px;
+  .projectPage .desc, .projectPage .tech, .projectPage .ski {
+    padding-left: 1vw;
+    padding-right: 1vw;
   }
 
   .mainCut {
@@ -279,6 +280,11 @@
 
   .mobileCut {
     z-index: 990;
+  }
+}
+@media (hover: hover) {
+  .mainCut:hover {
+    transform: scale(1.1, 1.1);
   }
 }
 

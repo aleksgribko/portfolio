@@ -103,8 +103,8 @@ const projectsData = [
             'Implementing new instruments (SASS, React styled components)',
             'Making a modern and responsive web design',           
         ],
-        git: '',
-        site: '',
+        git: 'https://github.com/Alezh89/portfolio',
+        site: 'https://agribko.netlify.com',
         description: `This website portfolio that is result of my latest activity and practice. 
         Here I collected exemples of my work and used my ReactJS knowledge`,       
         pictureText: [

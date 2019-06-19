@@ -126,7 +126,7 @@ export default function LayerInfo(props) {
 									<div
 									key={++keyInd4}
 										className="skillOne"
-										style={{ "paddingBottom": "5px" }}
+										style={{ "paddingBottom": "4px" }}
 									>
 										<span>{oneSkill.skill}</span>
 										<div className="progress">

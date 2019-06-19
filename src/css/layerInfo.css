@@ -92,13 +92,12 @@
     padding-right: 5px;
   }
   #layerForInfo .infoCard {
-    height: 70vh;
-    flex-basis: 70%;
+    height: 65vh;
     padding-top: 10%;
   }
 
   .skills .skillOne {
-    flex-basis: 95%;
+    flex-basis: 100%;
   }
 }
 @media only screen and (orientation: landscape) {
