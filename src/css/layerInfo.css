@@ -5,6 +5,10 @@
   color: black;
 }
 
+.layerMenu {
+  color: white;
+}
+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -16,10 +20,20 @@
   width: 100%;
   font-size: 1.3vmax;
 }
+.infoCard ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0px;
+}
+.infoCard .shaddow {
+  text-shadow: 1px 1px 1px black;
+}
 .infoCard p {
   margin-top: 10px;
   padding-left: 25px;
-  color: black;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 .infoCard h3 {
   padding-left: 10px;
@@ -37,7 +51,7 @@
 .progress div {
   position: relative;
   height: 1.5vmax;
-  background-color: #890506;
+  background-color: #ffd200;
   font-size: 1.2vmax;
   padding-right: 5%;
 }
@@ -48,11 +62,13 @@
 }
 
 .reddishColor {
-  color: #890506;
+  color: #ffd200;
+  text-shadow: 1px 1px 1px black;
 }
 
 .whiteBar {
-  color: white;
+  color: black;
+  text-shadow: 1px 1px 1px white;
 }
 
 #helloInfo {

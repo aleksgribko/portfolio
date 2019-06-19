@@ -1,54 +1,33 @@
 ul {
 	display: flex;
 	flex-direction: row;
-	list-style: none;		
-	
+	list-style: none;
 }
 
 li {
-	a {
-	color: #890506;
-	text-decoration: none;
-	padding-left: 20px;
- 	}
- 	a:hover {
- 		color: black;
- 		text-decoration: underline;
- 	}
+	a, span {
+		color: #ffd200;
+		text-decoration: none;
+		padding-left: 20px;
+	}
+	a:hover {
+		color: black;
+		text-decoration: underline;
+	}
+	span:hover {
+		color: black;
+		text-decoration: underline;
+	}
 }
 
 .flex {
-	display: flex;	
-
+	display: flex;
 }
 
 .navbar {
-	input{
-	
-	
-}
-}
-
-.navbar {
-	width: 97vw;
-	position: fixed;	
+	width: 97%;
+	position: fixed;
 	justify-content: flex-end;
-	
+
 	font-size: 1.5vmax;
-}
-
-@media (max-width: 435px){
-	li {
-	a {
-//	font-size: 0.8rem;
- 	}
- }
-}
-
-@media (max-width: 435px){
-	li {
-	a {
-//	font-size: 0.7rem;
- 	}
- }
 }

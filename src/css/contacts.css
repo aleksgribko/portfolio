@@ -4,12 +4,16 @@ ul {
   list-style: none;
 }
 
-li a {
-  color: #890506;
+li a, li span {
+  color: #ffd200;
   text-decoration: none;
   padding-left: 20px;
 }
 li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+li span:hover {
   color: black;
   text-decoration: underline;
 }
@@ -19,7 +23,7 @@ li a:hover {
 }
 
 .navbar {
-  width: 97vw;
+  width: 97%;
   position: fixed;
   justify-content: flex-end;
   font-size: 1.5vmax;

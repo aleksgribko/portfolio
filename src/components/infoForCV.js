@@ -1,23 +1,16 @@
     export const about = {
-        name: 'About',
-        about: `Motivated with ever-lasting curiosity, 
-        I always wanted to work in a team with cutting age technologies. 
-        Being a lawyer for 7 years I realized that bare application of quite stable 
-        knowledge doesn’t develop me as much as I would like too. In the IT world changes 
-        are happening everyday and this is my style to follow them and keep this fast pace 
-        in acquiring new skills. That is why I was so excited to start my career change. 
-        Every day I find out new technologies that I cannot wait to use on practice`,
-        hobbies: 'Hockey (5 years) and floorball (1,5 years), travelling (20 countries)',        
+        name: 'About',        
+        hobbies: 'Hockey (5 years) and floorball (1,5 years), all winter activities, travelling (20 countries), new technologies',        
         languages: [
              {lang: 'Russian', level: 100, cert: 'C2'},
              {lang: 'English', level: 80, cert: 'C1'},
              {lang: 'German', level: 50, cert: 'B1'},   
              {lang: 'French', level: 30, cert: 'A2'},
          ],
-         email: '',
-         github: 'https://github.com/Alezh89',
-         twitter: 'https://twitter.com/Alezh89',
-         linkedin: 'https://www.linkedin.com/in/aleksandrgribko/'
+         games: 'Fallout, Mass Effect',
+         movies: "Interstellar, Blade runner, Pulp fiction, Schindler's list",
+         music: 'Deep house, EDM',
+         books: 'Russian classic',
     }
 
     export const education = {
@@ -60,7 +53,7 @@
              {skill: 'CSS (incl. SASS)', numbProj: 7},
              {skill: 'Vanilla JavaScript ES6, jQuery', numbProj: 6},
              {skill: 'Git, GitHub', numbProj: 7},
-             {skill: 'React (hooks, styled-components)', numbProj: 2},
+             {skill: 'React (hooks, material-ui)', numbProj: 2},
              {skill: 'Bootstrap 4', numbProj: 3},
              {skill: 'WordPress', numbProj: 1},
              {skill: 'Agile workﬂows', numbProj: 1},

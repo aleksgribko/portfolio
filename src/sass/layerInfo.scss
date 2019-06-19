@@ -1,26 +1,41 @@
 #layerForInfo {
-	//	flex-basis: 40%;
 	color: white;
 	a {
 		color: black;
 	}
 }
 
-.skills{
+.layerMenu {
+	color: white;
+}
+
+.skills {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;		 
+	justify-content: space-between;
 }
 
 .infoCard {
 	max-height: 90vh;
 	width: 100%;
 	font-size: 1.3vmax;
-	
-	p{
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		padding-left: 0px;
+	}
+
+	.shaddow {
+		text-shadow: 1px 1px 1px black;
+	}
+
+	p {
 		margin-top: 10px;
 		padding-left: 25px;
-		color: black;
+		color: white;
+		text-shadow: 1px 1px 1px black;
 	}
 
 	h3 {
@@ -42,7 +57,7 @@
 	div {
 		position: relative;
 		height: 1.5vmax;
-		background-color: #890506;
+		background-color: #ffd200;
 		font-size: 1.2vmax;
 		padding-right: 5%;
 	}
@@ -54,16 +69,18 @@
 }
 
 .reddishColor {
-	color: #890506;
+	color: #ffd200;
+	text-shadow: 1px 1px 1px black;
 }
 .whiteBar {
-	color: white;
+	color: black;
+	text-shadow: 1px 1px 1px white;
 }
 
 #helloInfo {
 	display: flex;
 	flex-direction: column;
-	div{
+	div {
 		font-size: 1.2vmax;
 	}
 }
@@ -77,32 +94,29 @@
 
 	#layerForInfo {
 		width: 90%;
-		
-		
+
 		padding-left: 5px;
-		padding-right: 5px;		
-		
-		.infoCard{
+		padding-right: 5px;
+
+		.infoCard {
 			height: 70vh;
 			flex-basis: 70%;
 			padding-top: 10%;
 		}
 	}
 
-	.skills{	
-		.skillOne{
+	.skills {
+		.skillOne {
 			flex-basis: 95%;
-		} 
-}
-
-	
+		}
+	}
 }
 
 @media only screen and (orientation: landscape) {
 	#layerForInfo {
-		.infocard{
-		margin-left: 10vw;
-		margin-right: 10vw;
+		.infocard {
+			margin-left: 10vw;
+			margin-right: 10vw;
 		}
 	}
 
@@ -116,9 +130,9 @@
 		width: 50vw;
 	}
 
-	.skills{	
-		.skillOne{
+	.skills {
+		.skillOne {
 			flex-basis: 45%;
-		} 
+		}
 	}
 }

@@ -1,12 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import AllInfo from './components/AllInfo.js'
 import Contacts from './components/Contacts.js'
 import Projects from './components/Projects.js'
 import ScrollElement from './components/ScrollElement.js'
 import LayerInfo from './components/LayerInfo.js'
-import styled from 'styled-components'
-import $ from 'jquery'
-
 
 import './css/App.css';
 

@@ -1,23 +1,24 @@
 .projectPage {
   height: 92vh;
   margin-top: 8vh;
-  margin-left: 1vw;
-  margin-right: 1vw;
   border-radius: 20px;
   display: grid;
-  grid-template-areas: "pro pro pro pro" "lin lin lin lin" "tech ski desc desc" "pic pic pic pic";
-  grid-template-rows: 10% 7% 27% 50%;
   grid-gap: 10px;
 }
 .projectPage .pic {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectPage .pic img {
+  max-height: 100%;
+  border: 2px solid black;
 }
 .projectPage .pic .mainCut {
-  max-width: 90%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 3px solid black;
+  z-index: 498;
+  height: 100%;
+  text-align: center;
+  margin: 0;
 }
 .projectPage .pic .mainFull {
   position: fixed;
@@ -28,36 +29,13 @@
   transform: translate(-50%, -50%);
   max-height: 90%;
   max-width: 90%;
-  border: 5px solid #890506;
-  border-radius: 5px;
-}
-.projectPage .pic .mobileCut {
-  max-width: 80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 3px solid black;
-}
-.projectPage .pic .mobileFull {
-  position: fixed;
-  display: block;
-  max-width: 90%;
-  max-height: 90%;
-  z-index: 991;
-  top: 50%;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-  border: 5px solid #890506;
-  border-radius: 5px;
+  border: 5px solid black;
 }
 .projectPage .pic .imgInfo {
   align-self: center;
-  text-align: center;
   font-style: italic;
-  color: #A6A8A7;
-}
-.projectPage .pic .mobileCut:hover {
-  transform: scale(1.1, 1.1);
+  color: white;
+  text-shadow: 1px 1px 3px black;
 }
 .projectPage .pic .mainCut:hover {
   transform: scale(1.1, 1.1);
@@ -91,9 +69,15 @@
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 1.8vmax;
 }
-.projectPage h3, .projectPage p, .projectPage ul {
-  padding-left: 20px;
+.projectPage h3 {
+  font-size: 1.6vmax;
+  text-align: center;
+}
+.projectPage h3,
+.projectPage p,
+.projectPage ul {
   margin-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -103,6 +87,9 @@
   margin: 0px;
   list-style-position: inside;
 }
+.projectPage ul p {
+  width: 100%;
+}
 .projectPage li {
   list-style-type: circle;
 }
@@ -110,26 +97,30 @@
   padding-bottom: 20px;
   padding-left: 20px;
 }
-.projectPage p {
+.projectPage p,
+.projectPage a {
   padding-bottom: 10px;
+  font-size: 1.2vmax;
 }
 
 #project1 {
   background-color: #031217;
-  color: #70A589;
+  color: #70a589;
 }
-#project1 h2 {
-  color: #EE4037;
+#project1 h2,
+#project1 h3 {
+  color: #ee4037;
 }
 #project1 a {
-  color: #EE4037;
+  color: #ee4037;
 }
 
 #project2 {
-  background-color: #FDF27C;
-  color: #455D4D;
+  background-color: #fdf27c;
+  color: #455d4d;
 }
-#project2 h2 {
+#project2 h2,
+#project2 h3 {
   color: #007bff;
 }
 #project2 a {
@@ -140,7 +131,8 @@
   background-color: #c7956d;
   color: #2b222c;
 }
-#project3 h2 {
+#project3 h2,
+#project3 h3 {
   color: #5e4352;
 }
 #project3 a {
@@ -148,21 +140,23 @@
 }
 
 #project4 {
-  background-color: #7FCAC3;
-  color: black;
+  background-color: #0869cc;
+  color: white;
 }
-#project4 h2 {
-  color: #FF003C;
+#project4 h2,
+#project4 h3 {
+  color: #ffd200;
 }
 #project4 a {
-  color: #FF003C;
+  color: #ffd200;
 }
 
 #project5 {
   background-color: #d4af37;
   color: #82371c;
 }
-#project5 h2 {
+#project5 h2,
+#project5 h3 {
   color: white;
 }
 #project5 a {
@@ -173,7 +167,8 @@
   background-color: black;
   color: white;
 }
-#project6 h2 {
+#project6 h2,
+#project6 h3 {
   color: #50c878;
 }
 #project6 a {
@@ -184,7 +179,8 @@
   background-color: #017069;
   color: #eeeeee;
 }
-#project7 h2 {
+#project7 h2,
+#project7 h3 {
   color: black;
 }
 #project7 a {
@@ -192,64 +188,96 @@
 }
 
 #project8 {
-  background-color: #DEDAE7;
-  color: #2F072A;
+  background-color: #dedae7;
+  color: #2f072a;
 }
-#project8 h2 {
-  color: #8F0732;
+#project8 h2,
+#project8 h3 {
+  color: #8f0732;
 }
 #project8 a {
-  color: #8F0732;
+  color: #8f0732;
 }
 
 @media only screen and (orientation: portrait) {
   .projectPage {
     flex-direction: column-reverse;
-  }
-  .projectPage .right {
-    width: 90%;
-    height: 70%;
+    justify-content: center;
     margin-top: 5vh;
+    height: 95vh;
+    max-width: 100vw;
+    margin-left: 0px;
+    margin-right: 0px;
+    grid-template-areas: "pro pro" "lin lin " "tech ski" "desc desc" "pic pic";
+    grid-template-rows: 7% 5% 23% 20% 35%;
   }
-  .projectPage .left {
-    flex-direction: row;
+  .projectPage .tech {
+    padding-left: 4vw;
+  }
+  .projectPage .ski {
+    padding-right: 4vw;
+  }
+  .projectPage .desc {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  .projectPage p,
+.projectPage h3 {
+    padding-left: 5px;
+  }
+  .projectPage h2 {
+    font-size: 2vmax;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projectPage h3 {
+    font-size: 1.8vmax;
+  }
+  .projectPage p,
+.projectPage a {
+    font-size: 1.5vmax;
+  }
+  .projectPage .pic {
     width: 100vw;
-    height: 30%;
+    max-height: auto;
   }
-  .projectPage .left .mainCut {
-    max-height: 90%;
-    max-width: 40vw;
-    display: block;
-    margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+  .projectPage .pic .mainCut {
+    width: 90%;
+    padding-bottom: auto;
+    height: auto;
+    align-self: center;
+    z-index: 498;
   }
-  .projectPage .left .imgInfo {
+  .projectPage .pic .imgInfo {
     display: none;
   }
-  .projectPage .left .mobileCut {
-    max-height: 90%;
-    max-width: 40vw;
-    display: block;
-    margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+  .projectPage .pic .mobileCut {
+    display: none;
   }
 }
 @media only screen and (orientation: landscape) {
   .projectPage {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    max-width: 100%;
     flex-direction: row;
+    grid-template-areas: "pro pro pro pro" "lin lin lin lin" "tech ski desc desc" "pic pic pic pic";
+    grid-template-rows: 10% 7% 32% 40%;
+    grid-template-colomns: 25% 25% 25% 25%;
+  }
+  .projectPage ul {
+    padding-left: 10px;
+  }
+  .projectPage .desc {
+    padding-right: 10px;
   }
 
   .mainCut {
-    max-height: 40%;
-    max-width: 100%;
     z-index: 990;
   }
 
   .mobileCut {
-    max-height: 40%;
-    max-width: 100%;
     z-index: 990;
   }
 }

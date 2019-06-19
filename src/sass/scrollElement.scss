@@ -5,7 +5,7 @@
   top: 90vh;
   left: 50%;
   
-  border: solid black;
+  border: solid #890506;
   border-width: 0 3px 3px 0;  
   padding: 3px; 
 }
@@ -15,6 +15,7 @@
   top: 93vh; 
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  z-index: 500;
 }
 
 .arrowUp {
@@ -23,6 +24,24 @@
   top: 2vh;  
   transform: rotate(225deg);
   -webkit-transform: rotate(225deg);
+  z-index: 888;
+}
+
+#photoNameScroll{
+
+  top:5px;
+  left:10px;
+  display: none; 
+  position: fixed;
+  z-index: 888;
+  h3{
+    margin-top:1vh;
+    padding-left: 10px;
+  }
+}
+
+.navItem{
+  cursor: pointer;
 }
 
 @media only screen and (orientation: portrait) {
@@ -31,3 +50,20 @@
 }
 
 }
+
+@media (max-height: 600px) {
+  %arrow  {
+  visibility: hidden;
+}
+
+}
+
+@media only screen and (orientation: portrait) and (max-width: 600px) {
+  #photoNameScroll {
+    h3 {
+      font-size: 0px;
+    }
+  }
+
+}
+

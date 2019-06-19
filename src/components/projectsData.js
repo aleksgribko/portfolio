@@ -139,7 +139,7 @@ const projectsData = [
     },
     {
         id: 'project6',
-        name: "Maping out a technical solution for the food delivery site",
+        name: "Maping out a technical solution for the site",
         what: 'UML and SQL technical solution',
         technologies: [
             'UML',            
@@ -152,14 +152,13 @@ const projectsData = [
         ],
         git: 'https://github.com/Alezh89/UML-SQL',
         site: '',
-        description: `A technical solution for a young startup that delivers their own high-quality meals to residences with their team of delivery bikers.
-        Every day, they create 2 main dishes and 2 desserts. These 2 main dishes are stored and then given to delivery people who bike to the food to the residence that requested it. 
-        On its website, ExpressFood allows clients to order one or multiple dishes and desserts. There are no fees for delivery. Menu items change every day.
-        Once a client submits their order, they see a page displaying if the order has gone out for delivery yet, as well as an estimate for their meal's arrival time.
+        description: `A technical solution for a young startup that delivers their own high-quality meals to residences with their delivery team.
+        Every day, they create 2 main dishes and 2 desserts. These 2 main dishes are stored and then given to delivery people who bike to the food to the residence. 
+        Startup allows clients to order one or multiple dishes. Menu items change every day.
         The task was to make a MySQL database and a UML diagram to model this technical architecture for the startup.`,       
         pictureText: [
-            'UML diagram',
-            'SQL database'
+            'technical solution: UML diagram',
+            'SQL database made in MySQL '
         ] 
     },
 

@@ -1,43 +1,95 @@
 import React from "react";
 import "../css/contacts.css";
-import $ from 'jquery'
-import Clipboard from 'clipboard'
+import Clipboard from "clipboard";
+
+import Tooltip from "@material-ui/core/Tooltip";
+import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 
 export default class Contacts extends React.Component {
+	constructor() {
+		super();
+		this.state = {
+			open: false
+		};
+		this.handleTooltipClose = this.handleTooltipClose.bind(this);
+		this.handleTooltipOpen = this.handleTooltipOpen.bind(this);
+	}
 
-  	componentDidMount(){
-  	let btns = document.getElementById('btnCopy1')
-    let clipboard = new Clipboard(btns);
-    
-}
-render(){
-	return (
-		<div className="flex navbar" style={{'z-index': '100'}}>
-		<ul>
-			<li>
-				
-				<a	
-					id='btnCopy1'	
-					data-clipboard-text="alezh89@gmail.com"									
-				//	href="mailto:alezh89@gmail.com?Subject=Hi,%20Alex.%20I%20saw%20your%20portfolio%20website"
-				//	target="_top"
-				>
-					alezh89@gmail.com
-				</a>
-			</li>
-			<li>
-				<a href="https://github.com/Alezh89">github</a>
-			</li>
-			<li>
-				<a href="https://twitter.com/Alezh89">twitter</a>
-			</li>
-			<li>
-				<a href="https://www.linkedin.com/in/aleksandrgribko/">
-					linkedin
-				</a>
-			</li>
-		</ul>
-		</div>
-	);
-}
+	handleTooltipClose() {
+		this.setState({
+			open: false
+		});
+	}
+
+	handleTooltipOpen() {
+		this.setState({
+			open: true
+		});
+	}
+
+	componentDidMount() {
+		let btns = document.getElementById("btnCopy1");
+		new Clipboard(btns);
+	}
+	render() {
+		return (
+			<div className="flex navbar" style={{ "zIndex": "887" }}>
+				<ul>
+					<li>
+						<ClickAwayListener
+							onClickAway={this.handleTooltipClose}
+						>
+							<div>
+								<Tooltip
+									PopperProps={{
+										disablePortal: true
+									}}
+									onClose={this.handleTooltipClose}
+									open={this.state.open}
+									disableFocusListener
+									disableHoverListener
+									disableTouchListener
+									title="email alezh89@gmail.com is copied"
+								>
+									<span
+										className="navItem"
+										id="btnCopy1"
+										onClick={this.handleTooltipOpen}
+										data-clipboard-text="alezh89@gmail.com"							
+										target="_top"
+									>
+										gmail
+									</span>
+								</Tooltip>
+							</div>
+						</ClickAwayListener>
+					</li>
+					<li>
+						<a
+							className="navItem"
+							href="https://github.com/Alezh89"
+						>
+							github
+						</a>
+					</li>
+					<li>
+						<a
+							className="navItem"
+							href="https://twitter.com/Alezh89"
+						>
+							twitter
+						</a>
+					</li>
+					<li>
+						<a
+							className="navItem"
+							href="https://www.linkedin.com/in/aleksandrgribko/"
+						>
+							linkedin
+						</a>
+					</li>
+				</ul>
+			</div>
+		);
+	}
 }
