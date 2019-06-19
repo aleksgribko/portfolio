@@ -3,6 +3,7 @@
   width: 20px;
   height: 20px;
   top: 90vh;
+  top: calc(var(--vh, 1vh) * 90);
   left: 50%;
   
   border: solid #890506;
@@ -12,6 +13,7 @@
 
 .arrowDown { 
 @extend %arrow;
+  top: calc(var(--vh, 1vh) * 93);
   top: 93vh; 
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);

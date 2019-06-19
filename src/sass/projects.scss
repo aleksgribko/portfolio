@@ -32,6 +32,7 @@ $project8head: #8f0732;
 
 .projectPage {
 	height: 92vh;
+	height: calc(var(--vh, 1vh) * 92);
 	margin-top: 8vh;
 	border-radius: 20px;
 	display: grid;
