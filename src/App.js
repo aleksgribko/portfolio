@@ -4,6 +4,7 @@ import Contacts from './components/Contacts.js'
 import Projects from './components/Projects.js'
 import ScrollElement from './components/ScrollElement.js'
 import LayerInfo from './components/LayerInfo.js'
+import $ from "jquery";
 
 import './css/App.css';
 
@@ -17,7 +18,15 @@ let [cardName, setCardName] = useState(null)
 //window.addEventListener('resize', () => {
 //  setVh(window.innerHeight * 0.01)
 //})
+  
 
+function handleClickAway() {
+
+   
+    $('.mainFull').addClass("mainCut")
+    $(".mainCut").removeClass("mainFull")
+    $("#blackLayer").css("display", "none");
+  }
 
   function switchLayer(name){
     setCardName(name)
@@ -48,7 +57,7 @@ let [cardName, setCardName] = useState(null)
        </div>  
        <Projects /> 
        <ScrollElement />
-       <div id='blackLayer'></div>
+       <div onClick={() => handleClickAway()} id='blackLayer'></div>
     </div>
   );
 }

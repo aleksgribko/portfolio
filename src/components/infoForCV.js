@@ -1,6 +1,6 @@
     export const about = {
         name: 'About',        
-        hobbies: 'Hockey (5 years) and floorball (1,5 years), all winter activities, travelling (20 countries), new technologies',        
+        hobbies: 'Hockey (5 years) and floorball (1,5 years), all winter activities, traveling (20 countries), new technologies',        
         languages: [
              {lang: 'Russian', level: 100, cert: 'C2'},
              {lang: 'English', level: 80, cert: 'C1'},
