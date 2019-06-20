@@ -19,7 +19,7 @@ const projectsData = [
         ],
         git: 'https://github.com/Alezh89/filmfestbrooklyn.com',
         site: 'https://alezh89.github.io/filmfestbrooklyn.com/',
-        description: `A website made on the client description. Users suppose be able to register them for the festival.
+        description: `A website made on the client description. Users suppose to be able to register them for the festival.
         Tasks were to create the project brief and specification.`,
         pictureText: [
             'Wide width devices view',
@@ -48,10 +48,10 @@ const projectsData = [
         git: 'https://github.com/Alezh89/war-board-game',
         site: 'https://alezh89.github.io/war-board-game/',
         description: `The turn-based strategy where two players by means of weapons and other items try to win by making to the other player 100 damage points.
-        Each player can move up to 3 cells horisontally or vertically, exept if there is a hindrance, then movements are limited.
-        From the beggining each player has the following points: 5 attack with fists and 100 health. Each player can improve his attack points by collecting weapons.`,    
+        Each player can move up to 3 cells horizontally or vertically, except if there is a hindrance, then movements are limited.
+        From the beggining, each player has the following points: 5 to attack with fists and 100 health. Each player can improve his attack points by collecting weapons.`,    
         pictureText: [
-            'Hello page',
+            'Main page',
             'Playground'
         ]   
     },
@@ -72,16 +72,16 @@ const projectsData = [
         skills: [
             'Developing a full JavaScript application according to a specification',
             'Using an external API in JavaScript',
-            'Debuging an application using DevTools', 
+            'Debugging an application using DevTools', 
             'Using ReactJS library a project'          
         ],
         git: 'https://github.com/Alezh89/Restaurant-review-site-on-React-',
         site: 'https://restaurantsaround.netlify.com',
         description: `A restaurant review site with google maps API. One side of the website is the map with (1) featured restaurants 
         (with a JSON file) and (2) restaurants around the user. Another side is a list of all restaurants: featured and found for the user. 
-        he map is centered on the user and searches for restaurants around him. It should be a button "Find me" somewhere. Each restaurant 
+        The map is centered on the user and searches for restaurants around him. It should be a button "Find me" somewhere. Each restaurant 
         has a layout with additional information: address, google street view picture and reviews (already existing). User should be able 
-        to make a new review and to add a new restaurant by double clicking on the map`,       
+        to make a new review and to add a new restaurant by double-clicking on the map`,       
         pictureText: [
             'Map page with restaurants',
             'Mobile view, one restaurant'
@@ -106,7 +106,7 @@ const projectsData = [
         git: 'https://github.com/Alezh89/portfolio',
         site: 'https://agribko.netlify.com',
         description: `This website portfolio that is result of my latest activity and practice. 
-        Here I collected exemples of my work and used my ReactJS knowledge`,       
+        Here I collected examples of my work and used my ReactJS knowledge`,       
         pictureText: [
             'Wide width devices view',
             'Mobile devices view'
@@ -154,7 +154,7 @@ const projectsData = [
         site: '',
         description: `A technical solution for a young startup that delivers their own high-quality meals to residences with their delivery team.
         Every day, they create 2 main dishes and 2 desserts. These 2 main dishes are stored and then given to delivery people who bike to the food to the residence. 
-        Startup allows clients to order one or multiple dishes. Menu items change every day.
+        The Startup allows clients to order one or multiple dishes. Menu items change every day.
         The task was to make a MySQL database and a UML diagram to model this technical architecture for the startup.`,       
         pictureText: [
             'technical solution: UML diagram',
@@ -180,7 +180,7 @@ const projectsData = [
         git: 'https://github.com/Alezh89/Todo-list',
         site: '',
         description: `The given app 'to-do list' written with bugs had to be tested and fixed. 
-        Also recommendations on the rendering speed were given. A technical documentation was written for this project.`,       
+        Also, recommendations on the rendering speed were given. Technical documentation was written for this project.`,       
         pictureText: [
             'Jasmine testing framework',
             'Technical documentation'
@@ -204,7 +204,7 @@ const projectsData = [
         git: 'https://github.com/Alezh89/quotegenerator',
         site: 'https://alezh89.github.io/quotegenerator/',
         description: `A random quote generator of 2 types: (1) Where the quotes will be randomly constructed 
-        by assembling different pieces of a sentence, and (2) With movie quotes. In each case a user can choose the number 
+        by assembling different pieces of a sentence, and (2) With movie quotes. In each case, a user can choose the number 
         of quotes (up to 5).`,       
         pictureText: [
             'Wide width devices view',

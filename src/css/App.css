@@ -1,13 +1,12 @@
 body,
 html {
-  font-family: 'Roboto' ,"Verdana", Times, serif;
+  font-family: "Roboto", "Verdana", Times, serif;
   margin: 0;
   width: 100%;
 }
 
 #project0 {
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -29,7 +28,6 @@ html {
   position: absolute;
   background-image: linear-gradient(to bottom right, #0869cc, #1eb6a4);
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   z-index: -1;
 }
