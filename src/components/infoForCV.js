@@ -38,7 +38,7 @@
          name: 'Experience',
          places: [
              {company: 'OpenClassrooms (8 projects with mentors)', position: 'student', spec: 'Front-end learning path', term: 'Oct 2018 – Jun 2019'},
-             {company: 'Innovative People Ltd', position: 'IT and IP Legal counsel', spec: 'IT outsourcing', term: 'Jun 2017 - Present'},
+             {company: 'Innovative People Ltd', position: 'IT and IP Legal counsel', spec: 'IT outsourcing', term: 'Jun 2017 - Jun 2019'},
              {company: 'UGIS group Ltd', position: 'IT and IP Legal counsel', spec: 'IT outsourcing', term:'Sep 2014 – Sep 2016'},
              {company: 'National Center of Intellectual Property', position: 'Specialist of the department of law and international treaties', spec: 'IT outsourcing', term: 'Sep 2012 – Sep 2014'},
              {company: 'IT legal solutions', position: 'Legal Intern', spec: 'Online legal service', term:'Feb 2012 – Aug 2012'}
