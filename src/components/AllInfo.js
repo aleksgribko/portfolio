@@ -65,15 +65,15 @@ export default class AllInfo extends React.Component {
 						>
 							language
 						</span>
-						, I always wanted to work in an IT team with cutting edge 
-						technologies and challenging projects. Having{" "}
+						, I always wanted to work in a team of bright people who 
+						work with modern frameworks on challenging projects. Having{" "}
 						<span
 							className="Education menuButton"
 							onClick={() => this.props.switchLayer("Education")}
 						>
 							education
 						</span>{" "}
-						in IT and IP law I was working from the beginning of my
+						in IT law I was working from the beginning of my
 						career either with the protection of new technologies or
 						on its usage. I have{" "}
 						<span
@@ -82,24 +82,16 @@ export default class AllInfo extends React.Component {
 						>
 							experience
 						</span>{" "}
-						in IT and IP law of almost 7 years.
+						in IT law and now working on front-end projects. My favorite 
+						tools are JS ES6, ReactJS, CSS and SASS.
 					</p>
 
 					<p>
-						At some point, I felt that the bare application of quite
-						stable legal knowledge doesn’t develop me as much as I
-						would like too. Moreover, I am a{" "}
-						<span
-							className="about menuButton"
-							onClick={() => this.props.switchLayer("About")}
-						>
-							team player
-						</span>{" "}
-						and was dreaming to work with people of my specialization 
-						where everyone is learning from each other in an agile
-						way. In the IT world changes are happening every day and
-						I feel excited to follow these changes and keep this fast
-						pace in acquiring new{" "}
+						Full of ideas, working both within a team and on my own, autonomous. 
+						The priority for me is the best UX and responsive design. I want to share 
+						with my team my help, devotion, and interest in making innovations in web 
+						development. In the IT world changes are happening every day and I feel 
+						excited to follow these changes and keep this fast pace in acquiring new{" "}
 						<span
 							className="technicalSkills menuButton"
 							onClick={() => this.props.switchLayer("Skills")}
@@ -112,7 +104,7 @@ export default class AllInfo extends React.Component {
 							className="Experience menuButton"
 							onClick={() => this.props.switchLayer("Experience")}
 						>
-							projects
+							front-end projects
 						</span>{" "}
 						under mentors' control.
 					</p>
@@ -159,15 +151,15 @@ export default class AllInfo extends React.Component {
 										disableFocusListener
 										disableHoverListener
 										disableTouchListener
-										title="email alezh89@gmail.com is copied"
+										title="email aleks.gribko@gmail.com is copied"
 									>
 										<span
 											id="btnCopy2"
-											data-clipboard-text="alezh89@gmail.com"
+											data-clipboard-text="aleks.gribko@gmail.com"
 											onClick={this.handleTooltipOpen}
 											className="contactButton"											
 										>
-											alezh89@gmail.com
+											aleks.gribko@gmail.com
 										</span>
 									</Tooltip>
 								</div>

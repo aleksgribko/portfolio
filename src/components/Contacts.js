@@ -49,13 +49,13 @@ export default class Contacts extends React.Component {
 									disableFocusListener
 									disableHoverListener
 									disableTouchListener
-									title="email alezh89@gmail.com is copied"
+									title="email aleks.gribko@gmail.com is copied"
 								>
 									<span
 										className="navItem"
 										id="btnCopy1"
 										onClick={this.handleTooltipOpen}
-										data-clipboard-text="alezh89@gmail.com"							
+										data-clipboard-text="aleks.gribko@gmail.com"							
 										target="_top"
 									>
 										gmail
