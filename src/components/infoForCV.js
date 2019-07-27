@@ -49,11 +49,11 @@
     export const skills = {
          name: 'Skills',
          skills: [
-             {skill: 'HTML', numbProj: 6},
+             {skill: 'HTML', numbProj: 7},
              {skill: 'CSS (incl. SASS)', numbProj: 7},
              {skill: 'Vanilla JavaScript ES6, jQuery', numbProj: 6},
              {skill: 'Git, GitHub', numbProj: 7},
-             {skill: 'React (hooks, material-ui)', numbProj: 2},
+             {skill: 'React (hooks, material-ui)', numbProj: 3},
              {skill: 'Bootstrap 4', numbProj: 3},
              {skill: 'WordPress', numbProj: 1},
              {skill: 'Agile workﬂows', numbProj: 1},

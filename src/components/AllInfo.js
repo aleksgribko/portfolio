@@ -1,8 +1,8 @@
 import React from "react";
 import { about, education, experience, skills } from "./infoForCV.js";
 import "../css/allInfo.css";
-import Clipboard from "clipboard";
-
+import Clipboard from "clipboard"; 
+ 
 import Tooltip from "@material-ui/core/Tooltip";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 
@@ -52,11 +52,11 @@ export default class AllInfo extends React.Component {
 	render() {
 		return (
 			<div className="layerMenu">
-				<div
+				<div					
 					className={!this.props.cardName ? "visible" : "hidden"}
 					id="textMenu"
 				>
-					<p>
+					<p className="animated slideInRight">
 						Being devoted and motivated with ever-lasting curiosity
 						to learn something new, like a new{" "}
 						<span
@@ -86,7 +86,7 @@ export default class AllInfo extends React.Component {
 						tools are JS ES6, ReactJS, CSS and SASS.
 					</p>
 
-					<p>
+					<p className="animated slideInRight">
 						Full of ideas, working both within a team and on my own, autonomous. 
 						The priority for me is the best UX and responsive design. I want to share 
 						with my team my help, devotion, and interest in making innovations in web 
@@ -110,28 +110,28 @@ export default class AllInfo extends React.Component {
 					</p>
 
 					<div className="contactField">
-						<p>My contacts:</p>
+						<p className="animated slideInRight">My contacts:</p>
 
 						<a
-							className="contactButton"
+							className="contactButton animated slideInRight"
 							href="https://www.facebook.com/aleksandr.gribko"
 						>
 							<i className="fab fa-facebook-f" />
 						</a>
 						<a
-							className="contactButton"
+							className="contactButton animated slideInRight"
 							href="https://www.linkedin.com/in/aleksandrgribko/"
 						>
 							<i className="fab fa-linkedin-in" />
 						</a>
 						<a
-							className="contactButton"
+							className="contactButton animated slideInRight"
 							href="https://twitter.com/Alezh89"
 						>
 							<i className="fab fa-twitter" />
 						</a>
 						<a
-							className="contactButton"
+							className="contactButton animated slideInRight"
 							href="https://github.com/Alezh89"
 						>
 							<i className="fab fa-github" />
@@ -157,7 +157,7 @@ export default class AllInfo extends React.Component {
 											id="btnCopy2"
 											data-clipboard-text="aleks.gribko@gmail.com"
 											onClick={this.handleTooltipOpen}
-											className="contactButton"											
+											className=" animated slideInRight contactButton"											
 										>
 											aleks.gribko@gmail.com
 										</span>

@@ -167,7 +167,7 @@ const projectsData = [
         name: "Working on an existing project",
         what: 'Analysis of an existing project',
         technologies: [
-            'Jasmine (JS testing framework)',            
+            'Jasmine (testing framework)',            
             'DevTools, performance optimization',
             'JS'
 
@@ -186,7 +186,6 @@ const projectsData = [
             'Technical documentation'
         ] 
     },
-
     {
         id: 'project8',
         name: "Quotation generator",
@@ -206,6 +205,28 @@ const projectsData = [
         description: `A random quote generator of 2 types: (1) Where the quotes will be randomly constructed 
         by assembling different pieces of a sentence, and (2) With movie quotes. In each case, a user can choose the number 
         of quotes (up to 5).`,       
+        pictureText: [
+            'Wide width devices view',
+            'Mobile devices view'
+        ] 
+    },
+    {
+        id: 'project9',
+        name: "Movie grid in React",
+        what: 'Mobile & desktop app',
+        technologies: [
+            'HTML',                         
+            'JS',
+            'React',
+            'Material-ui'
+        ],
+        skills: [
+            'Designing an algorithm to meet a specification',
+            'Making responsive and interactive react based movie grid',                  
+        ],
+        git: 'https://github.com/Alezh89/Movie-grid-with-react',
+        site: 'https://movie-grid-react.netlify.com',
+        description: `Responsive and interactive movie grid. Movies can be shown as 4, 8 or 12 per page, deleted and liked/disliked. There is pagination.`,       
         pictureText: [
             'Wide width devices view',
             'Mobile devices view'

@@ -29,12 +29,18 @@ li {
 	position: fixed;
 	justify-content: flex-end;	
 	font-size: 1.5vmax;
+	opacity: 0;
+	transition: .3s;
+	background-color: #0869cc;
 	ul {
 		padding-right: 1em;
 		padding-left: 1em;
 		padding-top: 1em;
 		padding-bottom: 0.5em;
 		margin: 0;
-		border-radius: 5px;
+		border-radius: 5px;		
+		.navItem {
+			color: white;
+		}
 	}
 }

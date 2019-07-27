@@ -201,6 +201,18 @@
   color: #8f0732;
 }
 
+#project9 {
+  background-color: #C0C0C0;
+  color: black;
+}
+#project9 h2,
+#project9 h3 {
+  color: #3f51b5;
+}
+#project9 a {
+  color: #3f51b5;
+}
+
 @media only screen and (orientation: portrait) {
   .projectPage {
     flex-direction: column-reverse;

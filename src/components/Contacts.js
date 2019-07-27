@@ -33,7 +33,7 @@ export default class Contacts extends React.Component {
 	}
 	render() {
 		return (
-			<div className="flex navbar" style={{ "zIndex": "887" }}>
+			<div className="flex navbar" style={{ "zIndex": "887", 'borderRadius': '10px' }}>
 				<ul>
 					<li>
 						<ClickAwayListener

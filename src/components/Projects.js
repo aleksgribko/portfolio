@@ -3,12 +3,27 @@ import projectsData from "./projectsData.js";
 import "../css/projects.css";
 import $ from "jquery";
 
-export default function Projects() {
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
-  window.addEventListener("orientationchange", function() {
+const useStyles = makeStyles(theme => ({
+  button: {
+    margin: theme.spacing(1),
+  },
+  input: {
+    display: 'none',
+  },
+ 
+}));
+
+export default function Projects() {
+  const classes = useStyles();
+
+  window.addEventListener("orientationchange", function () {
     $('.mainCut').css("maxHeight", "50%")
     $('.mainCut').css("maxHeight", "100%")
-});
+  });
+
 
 
   function togglerClass(target) {
@@ -20,13 +35,13 @@ export default function Projects() {
       target.classList.add("mainCut");
       $("#blackLayer").css("display", "none");
       target.classList.remove("mainFull");
-    } 
+    }
   }
 
   function portfolioPages() {
-    let keyInd =0
-     let keyInd2 =0
-      let keyInd3 =0
+    let keyInd = 0
+    let keyInd2 = 0
+    let keyInd3 = 0
 
     let projects = projectsData.map((project, ind, arr) => (
       <div id={project.id} key={++keyInd3} className="projectPage">
@@ -35,18 +50,13 @@ export default function Projects() {
           <p>{project.what}</p>
         </div>
         <div className="lin">
-          <a
-            href={project.git}
-            style={{ display: `${project.git ? "" : "none"}` }}
-          >
-            <span>GIT link</span>
-          </a>
-          <a
-            href={project.site}
-            style={{ display: `${project.site ? "" : "none"}` }}
-          >
-            <span>Visit website</span>
-          </a>
+          <Button href={project.git} className={classes.button} style={{ display: `${project.git ? "" : "none"}` }}>
+            GIT link
+        </Button>
+          <Button href={project.site} className={classes.button} style={{ display: `${project.site ? "" : "none"}` }}>
+            Website link
+        </Button>
+
         </div>
         <div className="tech">
           <h3>Used technologies:</h3>
@@ -73,19 +83,22 @@ export default function Projects() {
           <p>{project.description}</p>
         </div>
         <div className="pic">
-        <div className='limitsImg'>          
+          <div className='limitsImg'>
             <img
               className="mainCut"
               onClick={e => togglerClass(e.target)}
               src={require(`../materials/project${ind + 1}/mainCut.jpg`)}
               alt="example"
-            />         
-         </div>
+            />
+          </div>
         </div>
       </div>
     ));
     return projects;
   }
 
-  return <div style={{ heigh: "100%", width: "100%" }}>{portfolioPages()}</div>;
+  return <div style={{ heigh: "100%", width: "100%" }}>
+   
+    {portfolioPages()}
+  </div>;
 }

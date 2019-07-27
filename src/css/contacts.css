@@ -27,6 +27,9 @@ li span:hover {
   position: fixed;
   justify-content: flex-end;
   font-size: 1.5vmax;
+  opacity: 0;
+  transition: 0.3s;
+  background-color: #0869cc;
 }
 .navbar ul {
   padding-right: 1em;
@@ -35,6 +38,9 @@ li span:hover {
   padding-bottom: 0.5em;
   margin: 0;
   border-radius: 5px;
+}
+.navbar ul .navItem {
+  color: white;
 }
 
 /*# sourceMappingURL=contacts.css.map */

@@ -30,6 +30,11 @@ $project8back: #dedae7;
 $project8text: #2f072a;
 $project8head: #8f0732;
 
+$project9back: #C0C0C0;
+$project9text: black;
+$project9head: #3f51b5;
+
+
 .projectPage {
 	height: 98vh;
 	height: calc(var(--vh, 1vh) * 98);
@@ -255,6 +260,18 @@ $project8head: #8f0732;
 	}
 }
 
+#project9 {
+	background-color: $project9back;
+	color: $project9text;
+	h2,
+	h3 {
+		color: $project9head;
+	}
+	a {
+		color: $project9head;
+	}
+}
+
 @media only screen and (orientation: portrait) {
 	.projectPage {
 		flex-direction: column-reverse;
@@ -342,7 +359,7 @@ $project8head: #8f0732;
 			"pro pro pro pro"
 			"lin lin lin lin"
 			"tech ski desc desc"
-			"pic pic pic pic";
+			"pic pic pic pic";   
 		grid-template-rows: 10% 7% 32% 40%;
 		grid-template-colomns: 25% 25% 25% 25%;
 

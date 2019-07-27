@@ -4,12 +4,12 @@ import "../css/helloInfo.css";
 export default function HelloInfo() {
 	return (
 		<div style={{ color: "white" }}>
-			<p>Hello,</p>
-			<p>
+			<p className="animated slideInLeft" >Hello,</p>
+			<p className="animated slideInLeft" >
 				My name is{" "}
 				<span style={{ color: "#FFD200" }}>Aleksandr Gribko</span>
 			</p>
-			<p>
+			<p className="animated slideInLeft" >
 				I am a{" "}
 				<span style={{ color: "#FFD200" }}>Front-end developer</span>{" "}
 				based in France
